@@ -13,663 +13,830 @@ $(document).ready(function() {
 
 let true_or_false = 0;
 let type_choice = '';
+let s_or_fail = "fail";
 
 function submitStat(){
-    if(true_or_false == 1){
-        //const home_team = document.getElementById("team_name").value;
-        const amount = document.getElementById("Amount_for_betting").value;
-        const security_code = document.getElementById("Security_for_betting").value;
-
-        alert(amount + security_code + type_choice);
-        //true_or_false = 0;
+    if(s_or_fail == "fail"){
+        alert('you must login first before having a bet')
     }
+    else{
+        if(true_or_false == 1){
+            //const home_team = document.getElementById("team_name").value;
+            const amount = document.getElementById("Amount_for_betting").value;
+            const security_code = document.getElementById("Security_for_betting").value;
+
+            alert(amount + security_code + type_choice);
+            //true_or_false = 0;
+        }
+    
     /*const amount = document.getElementById("Amount_for_betting").value;
     const security_code = document.getElementById("Security_for_betting").value;
     */
     //alert(amount + security_code);
-    if(true_or_false == 0){
-        alert('You have not chosen which type to bet on');
+        if(true_or_false == 0){
+            alert('You have not chosen which type to bet on');
+        }
     }
 }
 
 function submitStat_Villa(){
-    if(true_or_false == 1){
-        //const home_team = document.getElementById("team_name").value;
-        const home_team = document.getElementById("Villa").innerText;
-        const away_team = document.getElementById("Brighton").innerText;
-        const amount = document.getElementById("Amount_for_betting_Villa").value;
-        const security_code = document.getElementById("Security_for_betting_Villa").value;
-
-        alert(home_team + away_team + amount + security_code + type_choice);
-        //true_or_false = 0;
+    if(s_or_fail == "fail"){
+        alert('you must login first before having a bet')
     }
-    /*const amount = document.getElementById("Amount_for_betting").value;
-    const security_code = document.getElementById("Security_for_betting").value;
-    */
-    //alert(amount + security_code);
-    if(true_or_false == 0){
-        alert('You have not chosen which type to bet on');
+    else{
+        if(true_or_false == 1){
+            //const home_team = document.getElementById("team_name").value;
+            const home_team = document.getElementById("Villa").innerText;
+            const away_team = document.getElementById("Brighton").innerText;
+            const amount = document.getElementById("Amount_for_betting_Villa").value;
+            const security_code = document.getElementById("Security_for_betting_Villa").value;
+
+            alert(home_team + away_team + amount + security_code + type_choice);
+            //true_or_false = 0;
+        }
+        /*const amount = document.getElementById("Amount_for_betting").value;
+        const security_code = document.getElementById("Security_for_betting").value;
+        */
+        //alert(amount + security_code);
+        if(true_or_false == 0){
+            alert('You have not chosen which type to bet on');
+        }
     }
 }
 
 function submitbig_Villa(){
-    if(true_or_false == 1){
-        //const home_team = document.getElementById("team_name").value;
-        const home_team = document.getElementById("Villa").innerText;
-        const away_team = document.getElementById("Brighton").innerText;
-        const amount = document.getElementById("Amount_for_big_Villa").value;
-        const security_code = document.getElementById("Security_for_big_Villa").value;
-
-        alert(home_team + away_team + amount + security_code + type_choice);
-        //true_or_false = 0;
+    if(s_or_fail == "fail"){
+        alert('you must login first before having a bet')
     }
-    /*const amount = document.getElementById("Amount_for_betting").value;
-    const security_code = document.getElementById("Security_for_betting").value;
-    */
-    //alert(amount + security_code);
-    if(true_or_false == 0){
-        alert('You have not chosen which type to bet on');
+    else{
+        if(true_or_false == 1){
+            //const home_team = document.getElementById("team_name").value;
+            const home_team = document.getElementById("Villa").innerText;
+            const away_team = document.getElementById("Brighton").innerText;
+            const amount = document.getElementById("Amount_for_big_Villa").value;
+            const security_code = document.getElementById("Security_for_big_Villa").value;
+
+            alert(home_team + away_team + amount + security_code + type_choice);
+            //true_or_false = 0;
+        }
+        /*const amount = document.getElementById("Amount_for_betting").value;
+        const security_code = document.getElementById("Security_for_betting").value;
+        */
+        //alert(amount + security_code);
+        if(true_or_false == 0){
+            alert('You have not chosen which type to bet on');
+        }
     }
 }
 
 function submitCorner_Villa(){
-    if(true_or_false == 1){
-        //const home_team = document.getElementById("team_name").value;
-        const home_team = document.getElementById("Villa").innerText;
-        const away_team = document.getElementById("Brighton").innerText;
-        const amount = document.getElementById("Amount_for_Corner_Villa").value;
-        const security_code = document.getElementById("Security_for_Corner_Villa").value;
-
-        alert(home_team + away_team + amount + security_code + type_choice);
-        //true_or_false = 0;
+    if(s_or_fail == "fail"){
+        alert('you must login first before having a bet')
     }
-    /*const amount = document.getElementById("Amount_for_betting").value;
-    const security_code = document.getElementById("Security_for_betting").value;
-    */
-    //alert(amount + security_code);
-    if(true_or_false == 0){
-        alert('You have not chosen which type to bet on');
+    else{
+        if(true_or_false == 1){
+            //const home_team = document.getElementById("team_name").value;
+            const home_team = document.getElementById("Villa").innerText;
+            const away_team = document.getElementById("Brighton").innerText;
+            const amount = document.getElementById("Amount_for_Corner_Villa").value;
+            const security_code = document.getElementById("Security_for_Corner_Villa").value;
+
+            alert(home_team + away_team + amount + security_code + type_choice);
+            //true_or_false = 0;
+        }
+        /*const amount = document.getElementById("Amount_for_betting").value;
+        const security_code = document.getElementById("Security_for_betting").value;
+        */
+        //alert(amount + security_code);
+        if(true_or_false == 0){
+            alert('You have not chosen which type to bet on');
+        }
     }
 }
 
 function submitCard_Villa(){
-    if(true_or_false == 1){
-        //const home_team = document.getElementById("team_name").value;
-        const home_team = document.getElementById("Villa").innerText;
-        const away_team = document.getElementById("Brighton").innerText;
-        const amount = document.getElementById("Amount_for_Card_Villa").value;
-        const security_code = document.getElementById("Security_for_Card_Villa").value;
-
-        alert(home_team + away_team + amount + security_code + type_choice);
-        //true_or_false = 0;
+    if(s_or_fail == "fail"){
+        alert('you must login first before having a bet')
     }
-    /*const amount = document.getElementById("Amount_for_betting").value;
-    const security_code = document.getElementById("Security_for_betting").value;
-    */
-    //alert(amount + security_code);
-    if(true_or_false == 0){
-        alert('You have not chosen which type to bet on');
+    else{
+        if(true_or_false == 1){
+            //const home_team = document.getElementById("team_name").value;
+            const home_team = document.getElementById("Villa").innerText;
+            const away_team = document.getElementById("Brighton").innerText;
+            const amount = document.getElementById("Amount_for_Card_Villa").value;
+            const security_code = document.getElementById("Security_for_Card_Villa").value;
+
+            alert(home_team + away_team + amount + security_code + type_choice);
+            //true_or_false = 0;
+        }
+        /*const amount = document.getElementById("Amount_for_betting").value;
+        const security_code = document.getElementById("Security_for_betting").value;
+        */
+        //alert(amount + security_code);
+        if(true_or_false == 0){
+            alert('You have not chosen which type to bet on');
+        }
     }
 }
 
 function submitStat_Everton(){
-    if(true_or_false == 1){
-        //const home_team = document.getElementById("team_name").value;
-        const home_team = document.getElementById("Everton").innerText;
-        const away_team = document.getElementById("Bournemouth").innerText;
-        const amount = document.getElementById("Amount_for_betting_Everton").value;
-        const security_code = document.getElementById("Security_for_betting_Everton").value;
-
-        alert(home_team + away_team + amount + security_code + type_choice);
-        //true_or_false = 0;
+    if(s_or_fail == "fail"){
+        alert('you must login first before having a bet')
     }
-    /*const amount = document.getElementById("Amount_for_betting").value;
-    const security_code = document.getElementById("Security_for_betting").value;
-    */
-    //alert(amount + security_code);
-    if(true_or_false == 0){
-        alert('You have not chosen which type to bet on');
+    else{
+        if(true_or_false == 1){
+            //const home_team = document.getElementById("team_name").value;
+            const home_team = document.getElementById("Everton").innerText;
+            const away_team = document.getElementById("Bournemouth").innerText;
+            const amount = document.getElementById("Amount_for_betting_Everton").value;
+            const security_code = document.getElementById("Security_for_betting_Everton").value;
+
+            alert(home_team + away_team + amount + security_code + type_choice);
+            //true_or_false = 0;
+        }
+        /*const amount = document.getElementById("Amount_for_betting").value;
+        const security_code = document.getElementById("Security_for_betting").value;
+        */
+        //alert(amount + security_code);
+        if(true_or_false == 0){
+            alert('You have not chosen which type to bet on');
+        }
     }
 }
 
 function submitbig_Everton(){
-    if(true_or_false == 1){
-        //const home_team = document.getElementById("team_name").value;
-        const home_team = document.getElementById("Everton").innerText;
-        const away_team = document.getElementById("Bournemouth").innerText;
-        const amount = document.getElementById("Amount_for_big_Everton").value;
-        const security_code = document.getElementById("Security_for_big_Everton").value;
-
-        alert(home_team + away_team + amount + security_code + type_choice);
-        //true_or_false = 0;
+    if(s_or_fail == "fail"){
+        alert('you must login first before having a bet')
     }
-    /*const amount = document.getElementById("Amount_for_betting").value;
-    const security_code = document.getElementById("Security_for_betting").value;
-    */
-    //alert(amount + security_code);
-    if(true_or_false == 0){
-        alert('You have not chosen which type to bet on');
+    else{
+        if(true_or_false == 1){
+            //const home_team = document.getElementById("team_name").value;
+            const home_team = document.getElementById("Everton").innerText;
+            const away_team = document.getElementById("Bournemouth").innerText;
+            const amount = document.getElementById("Amount_for_big_Everton").value;
+            const security_code = document.getElementById("Security_for_big_Everton").value;
+
+            alert(home_team + away_team + amount + security_code + type_choice);
+            //true_or_false = 0;
+        }
+        /*const amount = document.getElementById("Amount_for_betting").value;
+        const security_code = document.getElementById("Security_for_betting").value;
+        */
+        //alert(amount + security_code);
+        if(true_or_false == 0){
+            alert('You have not chosen which type to bet on');
+        }
     }
 }
 
 function submitCorner_Everton(){
-    if(true_or_false == 1){
-        //const home_team = document.getElementById("team_name").value;
-        const home_team = document.getElementById("Everton").innerText;
-        const away_team = document.getElementById("Bournemouth").innerText;
-        const amount = document.getElementById("Amount_for_Corner_Everton").value;
-        const security_code = document.getElementById("Security_for_Corner_Everton").value;
-
-        alert(home_team + away_team + amount + security_code + type_choice);
-        //true_or_false = 0;
+    if(s_or_fail == "fail"){
+        alert('you must login first before having a bet')
     }
-    /*const amount = document.getElementById("Amount_for_betting").value;
-    const security_code = document.getElementById("Security_for_betting").value;
-    */
-    //alert(amount + security_code);
-    if(true_or_false == 0){
-        alert('You have not chosen which type to bet on');
+    else{
+        if(true_or_false == 1){
+            //const home_team = document.getElementById("team_name").value;
+            const home_team = document.getElementById("Everton").innerText;
+            const away_team = document.getElementById("Bournemouth").innerText;
+            const amount = document.getElementById("Amount_for_Corner_Everton").value;
+            const security_code = document.getElementById("Security_for_Corner_Everton").value;
+
+            alert(home_team + away_team + amount + security_code + type_choice);
+            //true_or_false = 0;
+        }
+        /*const amount = document.getElementById("Amount_for_betting").value;
+        const security_code = document.getElementById("Security_for_betting").value;
+        */
+        //alert(amount + security_code);
+        if(true_or_false == 0){
+            alert('You have not chosen which type to bet on');
+        }
     }
 }
 
 function submitCard_Everton(){
-    if(true_or_false == 1){
-        //const home_team = document.getElementById("team_name").value;
-        const home_team = document.getElementById("Everton").innerText;
-        const away_team = document.getElementById("Bournemouth").innerText;
-        const amount = document.getElementById("Amount_for_Card_Everton").value;
-        const security_code = document.getElementById("Security_for_Card_Everton").value;
-
-        alert(home_team + away_team + amount + security_code + type_choice);
-        //true_or_false = 0;
+    if(s_or_fail == "fail"){
+        alert('you must login first before having a bet')
     }
-    /*const amount = document.getElementById("Amount_for_betting").value;
-    const security_code = document.getElementById("Security_for_betting").value;
-    */
-    //alert(amount + security_code);
-    if(true_or_false == 0){
-        alert('You have not chosen which type to bet on');
+    else{
+        if(true_or_false == 1){
+            //const home_team = document.getElementById("team_name").value;
+            const home_team = document.getElementById("Everton").innerText;
+            const away_team = document.getElementById("Bournemouth").innerText;
+            const amount = document.getElementById("Amount_for_Card_Everton").value;
+            const security_code = document.getElementById("Security_for_Card_Everton").value;
+
+            alert(home_team + away_team + amount + security_code + type_choice);
+            //true_or_false = 0;
+        }
+        /*const amount = document.getElementById("Amount_for_betting").value;
+        const security_code = document.getElementById("Security_for_betting").value;
+        */
+        //alert(amount + security_code);
+        if(true_or_false == 0){
+            alert('You have not chosen which type to bet on');
+        }
     }
 }
 
 function submitStat_Leeds(){
-    if(true_or_false == 1){
-        //const home_team = document.getElementById("team_name").value;
-        const home_team = document.getElementById("Leeds").innerText;
-        const away_team = document.getElementById("Tottenham").innerText;
-        const amount = document.getElementById("Amount_for_betting_Leeds").value;
-        const security_code = document.getElementById("Security_for_betting_Leeds").value;
-
-        alert(home_team + away_team + amount + security_code + type_choice);
-        //true_or_false = 0;
+    if(s_or_fail == "fail"){
+        alert('you must login first before having a bet')
     }
-    /*const amount = document.getElementById("Amount_for_betting").value;
-    const security_code = document.getElementById("Security_for_betting").value;
-    */
-    //alert(amount + security_code);
-    if(true_or_false == 0){
-        alert('You have not chosen which type to bet on');
+    else{
+        if(true_or_false == 1){
+            //const home_team = document.getElementById("team_name").value;
+            const home_team = document.getElementById("Leeds").innerText;
+            const away_team = document.getElementById("Tottenham").innerText;
+            const amount = document.getElementById("Amount_for_betting_Leeds").value;
+            const security_code = document.getElementById("Security_for_betting_Leeds").value;
+
+            alert(home_team + away_team + amount + security_code + type_choice);
+            //true_or_false = 0;
+        }
+        /*const amount = document.getElementById("Amount_for_betting").value;
+        const security_code = document.getElementById("Security_for_betting").value;
+        */
+        //alert(amount + security_code);
+        if(true_or_false == 0){
+            alert('You have not chosen which type to bet on');
+        }
     }
 }
 
 function submitbig_Leeds(){
-    if(true_or_false == 1){
-        //const home_team = document.getElementById("team_name").value;
-        const home_team = document.getElementById("Leeds").innerText;
-        const away_team = document.getElementById("Tottenham").innerText;
-        const amount = document.getElementById("Amount_for_big_Leeds").value;
-        const security_code = document.getElementById("Security_for_big_Leeds").value;
-
-        alert(home_team + away_team + amount + security_code + type_choice);
-        //true_or_false = 0;
+    if(s_or_fail == "fail"){
+        alert('you must login first before having a bet')
     }
-    /*const amount = document.getElementById("Amount_for_betting").value;
-    const security_code = document.getElementById("Security_for_betting").value;
-    */
-    //alert(amount + security_code);
-    if(true_or_false == 0){
-        alert('You have not chosen which type to bet on');
+    else{
+        if(true_or_false == 1){
+            //const home_team = document.getElementById("team_name").value;
+            const home_team = document.getElementById("Leeds").innerText;
+            const away_team = document.getElementById("Tottenham").innerText;
+            const amount = document.getElementById("Amount_for_big_Leeds").value;
+            const security_code = document.getElementById("Security_for_big_Leeds").value;
+
+            alert(home_team + away_team + amount + security_code + type_choice);
+            //true_or_false = 0;
+        }
+        /*const amount = document.getElementById("Amount_for_betting").value;
+        const security_code = document.getElementById("Security_for_betting").value;
+        */
+        //alert(amount + security_code);
+        if(true_or_false == 0){
+            alert('You have not chosen which type to bet on');
+        }
     }
 }
 
 function submitCorner_Leeds(){
-    if(true_or_false == 1){
-        //const home_team = document.getElementById("team_name").value;
-        const home_team = document.getElementById("Leeds").innerText;
-        const away_team = document.getElementById("Tottenham").innerText;
-        const amount = document.getElementById("Amount_for_Corner_Leeds").value;
-        const security_code = document.getElementById("Security_for_Corner_Leeds").value;
-
-        alert(home_team + away_team + amount + security_code + type_choice);
-        //true_or_false = 0;
+    if(s_or_fail == "fail"){
+        alert('you must login first before having a bet')
     }
-    /*const amount = document.getElementById("Amount_for_betting").value;
-    const security_code = document.getElementById("Security_for_betting").value;
-    */
-    //alert(amount + security_code);
-    if(true_or_false == 0){
-        alert('You have not chosen which type to bet on');
+    else{
+        if(true_or_false == 1){
+            //const home_team = document.getElementById("team_name").value;
+            const home_team = document.getElementById("Leeds").innerText;
+            const away_team = document.getElementById("Tottenham").innerText;
+            const amount = document.getElementById("Amount_for_Corner_Leeds").value;
+            const security_code = document.getElementById("Security_for_Corner_Leeds").value;
+
+            alert(home_team + away_team + amount + security_code + type_choice);
+            //true_or_false = 0;
+        }
+        /*const amount = document.getElementById("Amount_for_betting").value;
+        const security_code = document.getElementById("Security_for_betting").value;
+        */
+        //alert(amount + security_code);
+        if(true_or_false == 0){
+            alert('You have not chosen which type to bet on');
+        }
     }
 }
 
 function submitCard_Leeds(){
-    if(true_or_false == 1){
-        //const home_team = document.getElementById("team_name").value;
-        const home_team = document.getElementById("Leeds").innerText;
-        const away_team = document.getElementById("Tottenham").innerText;
-        const amount = document.getElementById("Amount_for_Card_Leeds").value;
-        const security_code = document.getElementById("Security_for_Card_Leeds").value;
-
-        alert(home_team + away_team + amount + security_code + type_choice);
-        //true_or_false = 0;
+    if(s_or_fail == "fail"){
+        alert('you must login first before having a bet')
     }
-    /*const amount = document.getElementById("Amount_for_betting").value;
-    const security_code = document.getElementById("Security_for_betting").value;
-    */
-    //alert(amount + security_code);
-    if(true_or_false == 0){
-        alert('You have not chosen which type to bet on');
+    else{
+        if(true_or_false == 1){
+            //const home_team = document.getElementById("team_name").value;
+            const home_team = document.getElementById("Leeds").innerText;
+            const away_team = document.getElementById("Tottenham").innerText;
+            const amount = document.getElementById("Amount_for_Card_Leeds").value;
+            const security_code = document.getElementById("Security_for_Card_Leeds").value;
+
+            alert(home_team + away_team + amount + security_code + type_choice);
+            //true_or_false = 0;
+        }
+        /*const amount = document.getElementById("Amount_for_betting").value;
+        const security_code = document.getElementById("Security_for_betting").value;
+        */
+        //alert(amount + security_code);
+        if(true_or_false == 0){
+            alert('You have not chosen which type to bet on');
+        }
     }
 }
 
 function submitStat_United(){
-    if(true_or_false == 1){
-        //const home_team = document.getElementById("team_name").value;
-        const home_team = document.getElementById("Man_United").innerText;
-        const away_team = document.getElementById("Fulham").innerText;
-        const amount = document.getElementById("Amount_for_betting_United").value;
-        const security_code = document.getElementById("Security_for_betting_United").value;
-
-        alert(home_team + away_team + amount + security_code + type_choice);
-        //true_or_false = 0;
+    if(s_or_fail == "fail"){
+        alert('you must login first before having a bet')
     }
-    /*const amount = document.getElementById("Amount_for_betting").value;
-    const security_code = document.getElementById("Security_for_betting").value;
-    */
-    //alert(amount + security_code);
-    if(true_or_false == 0){
-        alert('You have not chosen which type to bet on');
+    else{
+        if(true_or_false == 1){
+            //const home_team = document.getElementById("team_name").value;
+            const home_team = document.getElementById("Man_United").innerText;
+            const away_team = document.getElementById("Fulham").innerText;
+            const amount = document.getElementById("Amount_for_betting_United").value;
+            const security_code = document.getElementById("Security_for_betting_United").value;
+
+            alert(home_team + away_team + amount + security_code + type_choice);
+            //true_or_false = 0;
+        }
+        /*const amount = document.getElementById("Amount_for_betting").value;
+        const security_code = document.getElementById("Security_for_betting").value;
+        */
+        //alert(amount + security_code);
+        if(true_or_false == 0){
+            alert('You have not chosen which type to bet on');
+        }
     }
 }
 
 function submitbig_United(){
-    if(true_or_false == 1){
-        //const home_team = document.getElementById("team_name").value;
-        const home_team = document.getElementById("Man_United").innerText;
-        const away_team = document.getElementById("Fulham").innerText;
-        const amount = document.getElementById("Amount_for_big_United").value;
-        const security_code = document.getElementById("Security_for_big_United").value;
-
-        alert(home_team + away_team + amount + security_code + type_choice);
-        //true_or_false = 0;
+    if(s_or_fail == "fail"){
+        alert('you must login first before having a bet')
     }
-    /*const amount = document.getElementById("Amount_for_betting").value;
-    const security_code = document.getElementById("Security_for_betting").value;
-    */
-    //alert(amount + security_code);
-    if(true_or_false == 0){
-        alert('You have not chosen which type to bet on');
+    else{
+        if(true_or_false == 1){
+            //const home_team = document.getElementById("team_name").value;
+            const home_team = document.getElementById("Man_United").innerText;
+            const away_team = document.getElementById("Fulham").innerText;
+            const amount = document.getElementById("Amount_for_big_United").value;
+            const security_code = document.getElementById("Security_for_big_United").value;
+
+            alert(home_team + away_team + amount + security_code + type_choice);
+            //true_or_false = 0;
+        }
+        /*const amount = document.getElementById("Amount_for_betting").value;
+        const security_code = document.getElementById("Security_for_betting").value;
+        */
+        //alert(amount + security_code);
+        if(true_or_false == 0){
+            alert('You have not chosen which type to bet on');
+        }
     }
 }
 
 function submitCorner_United(){
-    if(true_or_false == 1){
-        //const home_team = document.getElementById("team_name").value;
-        const home_team = document.getElementById("Man_United").innerText;
-        const away_team = document.getElementById("Fulham").innerText;
-        const amount = document.getElementById("Amount_for_Corner_United").value;
-        const security_code = document.getElementById("Security_for_Corner_United").value;
-
-        alert(home_team + away_team + amount + security_code + type_choice);
-        //true_or_false = 0;
+    if(s_or_fail == "fail"){
+        alert('you must login first before having a bet')
     }
-    /*const amount = document.getElementById("Amount_for_betting").value;
-    const security_code = document.getElementById("Security_for_betting").value;
-    */
-    //alert(amount + security_code);
-    if(true_or_false == 0){
-        alert('You have not chosen which type to bet on');
+    else{
+        if(true_or_false == 1){
+            //const home_team = document.getElementById("team_name").value;
+            const home_team = document.getElementById("Man_United").innerText;
+            const away_team = document.getElementById("Fulham").innerText;
+            const amount = document.getElementById("Amount_for_Corner_United").value;
+            const security_code = document.getElementById("Security_for_Corner_United").value;
+
+            alert(home_team + away_team + amount + security_code + type_choice);
+            //true_or_false = 0;
+        }
+        /*const amount = document.getElementById("Amount_for_betting").value;
+        const security_code = document.getElementById("Security_for_betting").value;
+        */
+        //alert(amount + security_code);
+        if(true_or_false == 0){
+            alert('You have not chosen which type to bet on');
+        }
     }
 }
 
 function submitCard_United(){
-    if(true_or_false == 1){
-        //const home_team = document.getElementById("team_name").value;
-        const home_team = document.getElementById("Man_United").innerText;
-        const away_team = document.getElementById("Fulham").innerText;
-        const amount = document.getElementById("Amount_for_Card_United").value;
-        const security_code = document.getElementById("Security_for_Card_United").value;
-
-        alert(home_team + away_team + amount + security_code + type_choice);
-        //true_or_false = 0;
+    if(s_or_fail == "fail"){
+        alert('you must login first before having a bet')
     }
-    /*const amount = document.getElementById("Amount_for_betting").value;
-    const security_code = document.getElementById("Security_for_betting").value;
-    */
-    //alert(amount + security_code);
-    if(true_or_false == 0){
-        alert('You have not chosen which type to bet on');
+    else{
+        if(true_or_false == 1){
+            //const home_team = document.getElementById("team_name").value;
+            const home_team = document.getElementById("Man_United").innerText;
+            const away_team = document.getElementById("Fulham").innerText;
+            const amount = document.getElementById("Amount_for_Card_United").value;
+            const security_code = document.getElementById("Security_for_Card_United").value;
+
+            alert(home_team + away_team + amount + security_code + type_choice);
+            //true_or_false = 0;
+        }
+        /*const amount = document.getElementById("Amount_for_betting").value;
+        const security_code = document.getElementById("Security_for_betting").value;
+        */
+        //alert(amount + security_code);
+        if(true_or_false == 0){
+            alert('You have not chosen which type to bet on');
+        }
     }
 }
 
 function submitStat_Chelsea(){
-    if(true_or_false == 1){
-        //const home_team = document.getElementById("team_name").value;
-        const home_team = document.getElementById("Chelsea").innerText;
-        const away_team = document.getElementById("away_newcastle").innerText;
-        const amount = document.getElementById("Amount_for_betting_Chelsea").value;
-        const security_code = document.getElementById("Security_for_betting_Chelsea").value;
-
-        alert(home_team + away_team + amount + security_code + type_choice);
-        //true_or_false = 0;
+    if(s_or_fail == "fail"){
+        alert('you must login first before having a bet')
     }
-    /*const amount = document.getElementById("Amount_for_betting").value;
-    const security_code = document.getElementById("Security_for_betting").value;
-    */
-    //alert(amount + security_code);
-    if(true_or_false == 0){
-        alert('You have not chosen which type to bet on');
+    else{
+        if(true_or_false == 1){
+            //const home_team = document.getElementById("team_name").value;
+            const home_team = document.getElementById("Chelsea").innerText;
+            const away_team = document.getElementById("away_newcastle").innerText;
+            const amount = document.getElementById("Amount_for_betting_Chelsea").value;
+            const security_code = document.getElementById("Security_for_betting_Chelsea").value;
+
+            alert(home_team + away_team + amount + security_code + type_choice);
+            //true_or_false = 0;
+        }
+        /*const amount = document.getElementById("Amount_for_betting").value;
+        const security_code = document.getElementById("Security_for_betting").value;
+        */
+        //alert(amount + security_code);
+        if(true_or_false == 0){
+            alert('You have not chosen which type to bet on');
+        }
     }
 }
 
 function submitbig_Chelsea(){
-    if(true_or_false == 1){
-        //const home_team = document.getElementById("team_name").value;
-        const home_team = document.getElementById("Chelsea").innerText;
-        const away_team = document.getElementById("away_newcastle").innerText;
-        const amount = document.getElementById("Amount_for_big_Chelsea").value;
-        const security_code = document.getElementById("Security_for_big_Chelsea").value;
-
-        alert(home_team + away_team + amount + security_code + type_choice);
-        //true_or_false = 0;
+    if(s_or_fail == "fail"){
+        alert('you must login first before having a bet')
     }
-    /*const amount = document.getElementById("Amount_for_betting").value;
-    const security_code = document.getElementById("Security_for_betting").value;
-    */
-    //alert(amount + security_code);
-    if(true_or_false == 0){
-        alert('You have not chosen which type to bet on');
+    else{
+        if(true_or_false == 1){
+            //const home_team = document.getElementById("team_name").value;
+            const home_team = document.getElementById("Chelsea").innerText;
+            const away_team = document.getElementById("away_newcastle").innerText;
+            const amount = document.getElementById("Amount_for_big_Chelsea").value;
+            const security_code = document.getElementById("Security_for_big_Chelsea").value;
+
+            alert(home_team + away_team + amount + security_code + type_choice);
+            //true_or_false = 0;
+        }
+        /*const amount = document.getElementById("Amount_for_betting").value;
+        const security_code = document.getElementById("Security_for_betting").value;
+        */
+        //alert(amount + security_code);
+        if(true_or_false == 0){
+            alert('You have not chosen which type to bet on');
+        }
     }
 }
 
 function submitCorner_Chelsea(){
-    if(true_or_false == 1){
-        //const home_team = document.getElementById("team_name").value;
-        const home_team = document.getElementById("Chelsea").innerText;
-        const away_team = document.getElementById("away_newcastle").innerText;
-        const amount = document.getElementById("Amount_for_Corner_Chelsea").value;
-        const security_code = document.getElementById("Security_for_Corner_Chelsea").value;
-
-        alert(home_team + away_team + amount + security_code + type_choice);
-        //true_or_false = 0;
+    if(s_or_fail == "fail"){
+        alert('you must login first before having a bet')
     }
-    /*const amount = document.getElementById("Amount_for_betting").value;
-    const security_code = document.getElementById("Security_for_betting").value;
-    */
-    //alert(amount + security_code);
-    if(true_or_false == 0){
-        alert('You have not chosen which type to bet on');
+    else{
+        if(true_or_false == 1){
+            //const home_team = document.getElementById("team_name").value;
+            const home_team = document.getElementById("Chelsea").innerText;
+            const away_team = document.getElementById("away_newcastle").innerText;
+            const amount = document.getElementById("Amount_for_Corner_Chelsea").value;
+            const security_code = document.getElementById("Security_for_Corner_Chelsea").value;
+
+            alert(home_team + away_team + amount + security_code + type_choice);
+            //true_or_false = 0;
+        }
+        /*const amount = document.getElementById("Amount_for_betting").value;
+        const security_code = document.getElementById("Security_for_betting").value;
+        */
+        //alert(amount + security_code);
+        if(true_or_false == 0){
+            alert('You have not chosen which type to bet on');
+        }
     }
 }
 
 function submitCard_Chelsea(){
-    if(true_or_false == 1){
-        //const home_team = document.getElementById("team_name").value;
-        const home_team = document.getElementById("Chelsea").innerText;
-        const away_team = document.getElementById("away_newcastle").innerText;
-        const amount = document.getElementById("Amount_for_Card_Chelsea").value;
-        const security_code = document.getElementById("Security_for_Card_Chelsea").value;
-
-        alert(home_team + away_team + amount + security_code + type_choice);
-        //true_or_false = 0;
+    if(s_or_fail == "fail"){
+        alert('you must login first before having a bet')
     }
-    /*const amount = document.getElementById("Amount_for_betting").value;
-    const security_code = document.getElementById("Security_for_betting").value;
-    */
-    //alert(amount + security_code);
-    if(true_or_false == 0){
-        alert('You have not chosen which type to bet on');
+    else{
+        if(true_or_false == 1){
+            //const home_team = document.getElementById("team_name").value;
+            const home_team = document.getElementById("Chelsea").innerText;
+            const away_team = document.getElementById("away_newcastle").innerText;
+            const amount = document.getElementById("Amount_for_Card_Chelsea").value;
+            const security_code = document.getElementById("Security_for_Card_Chelsea").value;
+
+            alert(home_team + away_team + amount + security_code + type_choice);
+            //true_or_false = 0;
+        }
+        /*const amount = document.getElementById("Amount_for_betting").value;
+        const security_code = document.getElementById("Security_for_betting").value;
+        */
+        //alert(amount + security_code);
+        if(true_or_false == 0){
+            alert('You have not chosen which type to bet on');
+        }
     }
 }
 
 function submitStat_Leicester(){
-    if(true_or_false == 1){
-        //const home_team = document.getElementById("team_name").value;
-        const home_team = document.getElementById("Leicester").innerText;
-        const away_team = document.getElementById("away_west").innerText;
-        const amount = document.getElementById("Amount_for_betting_Leicester").value;
-        const security_code = document.getElementById("Security_for_betting_Leicester").value;
-
-        alert(home_team + away_team + amount + security_code + type_choice);
-        //true_or_false = 0;
+    if(s_or_fail == "fail"){
+        alert('you must login first before having a bet')
     }
-    /*const amount = document.getElementById("Amount_for_betting").value;
-    const security_code = document.getElementById("Security_for_betting").value;
-    */
-    //alert(amount + security_code);
-    if(true_or_false == 0){
-        alert('You have not chosen which type to bet on');
+    else{
+        if(true_or_false == 1){
+            //const home_team = document.getElementById("team_name").value;
+            const home_team = document.getElementById("Leicester").innerText;
+            const away_team = document.getElementById("away_west").innerText;
+            const amount = document.getElementById("Amount_for_betting_Leicester").value;
+            const security_code = document.getElementById("Security_for_betting_Leicester").value;
+
+            alert(home_team + away_team + amount + security_code + type_choice);
+            //true_or_false = 0;
+        }
+        /*const amount = document.getElementById("Amount_for_betting").value;
+        const security_code = document.getElementById("Security_for_betting").value;
+        */
+        //alert(amount + security_code);
+        if(true_or_false == 0){
+            alert('You have not chosen which type to bet on');
+        }
     }
 }
 
 function submitbig_Leicester(){
-    if(true_or_false == 1){
-        //const home_team = document.getElementById("team_name").value;
-        const home_team = document.getElementById("Leicester").innerText;
-        const away_team = document.getElementById("away_west").innerText;
-        const amount = document.getElementById("Amount_for_big_Leicester").value;
-        const security_code = document.getElementById("Security_for_big_Leicester").value;
-
-        alert(home_team + away_team + amount + security_code + type_choice);
-        //true_or_false = 0;
+    if(s_or_fail == "fail"){
+        alert('you must login first before having a bet')
     }
-    /*const amount = document.getElementById("Amount_for_betting").value;
-    const security_code = document.getElementById("Security_for_betting").value;
-    */
-    //alert(amount + security_code);
-    if(true_or_false == 0){
-        alert('You have not chosen which type to bet on');
+    else{
+        if(true_or_false == 1){
+            //const home_team = document.getElementById("team_name").value;
+            const home_team = document.getElementById("Leicester").innerText;
+            const away_team = document.getElementById("away_west").innerText;
+            const amount = document.getElementById("Amount_for_big_Leicester").value;
+            const security_code = document.getElementById("Security_for_big_Leicester").value;
+
+            alert(home_team + away_team + amount + security_code + type_choice);
+            //true_or_false = 0;
+        }
+        /*const amount = document.getElementById("Amount_for_betting").value;
+        const security_code = document.getElementById("Security_for_betting").value;
+        */
+        //alert(amount + security_code);
+        if(true_or_false == 0){
+            alert('You have not chosen which type to bet on');
+        }
     }
 }
 
 function submitCorner_Leicester(){
-    if(true_or_false == 1){
-        //const home_team = document.getElementById("team_name").value;
-        const home_team = document.getElementById("Leicester").innerText;
-        const away_team = document.getElementById("away_west").innerText;
-        const amount = document.getElementById("Amount_for_Corner_Leicester").value;
-        const security_code = document.getElementById("Security_for_Corner_Leicester").value;
-
-        alert(home_team + away_team + amount + security_code + type_choice);
-        //true_or_false = 0;
+    if(s_or_fail == "fail"){
+        alert('you must login first before having a bet')
     }
-    /*const amount = document.getElementById("Amount_for_betting").value;
-    const security_code = document.getElementById("Security_for_betting").value;
-    */
-    //alert(amount + security_code);
-    if(true_or_false == 0){
-        alert('You have not chosen which type to bet on');
+    else{
+        if(true_or_false == 1){
+            //const home_team = document.getElementById("team_name").value;
+            const home_team = document.getElementById("Leicester").innerText;
+            const away_team = document.getElementById("away_west").innerText;
+            const amount = document.getElementById("Amount_for_Corner_Leicester").value;
+            const security_code = document.getElementById("Security_for_Corner_Leicester").value;
+
+            alert(home_team + away_team + amount + security_code + type_choice);
+            //true_or_false = 0;
+        }
+        /*const amount = document.getElementById("Amount_for_betting").value;
+        const security_code = document.getElementById("Security_for_betting").value;
+        */
+        //alert(amount + security_code);
+        if(true_or_false == 0){
+            alert('You have not chosen which type to bet on');
+        }
     }
 }
 
 function submitCard_Leicester(){
-    if(true_or_false == 1){
-        //const home_team = document.getElementById("team_name").value;
-        const home_team = document.getElementById("Leicester").innerText;
-        const away_team = document.getElementById("away_west").innerText;
-        const amount = document.getElementById("Amount_for_Card_Leicester").value;
-        const security_code = document.getElementById("Security_for_Card_Leicester").value;
-
-        alert(home_team + away_team + amount + security_code + type_choice);
-        //true_or_false = 0;
+    if(s_or_fail == "fail"){
+        alert('you must login first before having a bet')
     }
-    /*const amount = document.getElementById("Amount_for_betting").value;
-    const security_code = document.getElementById("Security_for_betting").value;
-    */
-    //alert(amount + security_code);
-    if(true_or_false == 0){
-        alert('You have not chosen which type to bet on');
+    else{
+        if(true_or_false == 1){
+            //const home_team = document.getElementById("team_name").value;
+            const home_team = document.getElementById("Leicester").innerText;
+            const away_team = document.getElementById("away_west").innerText;
+            const amount = document.getElementById("Amount_for_Card_Leicester").value;
+            const security_code = document.getElementById("Security_for_Card_Leicester").value;
+
+            alert(home_team + away_team + amount + security_code + type_choice);
+            //true_or_false = 0;
+        }
+        /*const amount = document.getElementById("Amount_for_betting").value;
+        const security_code = document.getElementById("Security_for_betting").value;
+        */
+        //alert(amount + security_code);
+        if(true_or_false == 0){
+            alert('You have not chosen which type to bet on');
+        }
     }
 }
 
 function submitStat_Arsenal(){
-    if(true_or_false == 1){
-        //const home_team = document.getElementById("team_name").value;
-        const home_team = document.getElementById("home_Arsenal").innerText;
-        const away_team = document.getElementById("away_wovles").innerText;
-        const amount = document.getElementById("Amount_for_betting_Arsenal").value;
-        const security_code = document.getElementById("Security_for_betting_Arsenal").value;
-
-        alert(home_team + away_team + amount + security_code + type_choice);
-        //true_or_false = 0;
+    if(s_or_fail == "fail"){
+        alert('you must login first before having a bet')
     }
-    /*const amount = document.getElementById("Amount_for_betting").value;
-    const security_code = document.getElementById("Security_for_betting").value;
-    */
-    //alert(amount + security_code);
-    if(true_or_false == 0){
-        alert('You have not chosen which type to bet on');
+    else{
+        if(true_or_false == 1){
+            //const home_team = document.getElementById("team_name").value;
+            const home_team = document.getElementById("home_Arsenal").innerText;
+            const away_team = document.getElementById("away_wovles").innerText;
+            const amount = document.getElementById("Amount_for_betting_Arsenal").value;
+            const security_code = document.getElementById("Security_for_betting_Arsenal").value;
+
+            alert(home_team + away_team + amount + security_code + type_choice);
+            //true_or_false = 0;
+        }
+        /*const amount = document.getElementById("Amount_for_betting").value;
+        const security_code = document.getElementById("Security_for_betting").value;
+        */
+        //alert(amount + security_code);
+        if(true_or_false == 0){
+            alert('You have not chosen which type to bet on');
+        }
     }
 }
 
 function submitbig_Arsenal(){
-    if(true_or_false == 1){
-        //const home_team = document.getElementById("team_name").value;
-        const home_team = document.getElementById("home_Arsenal").innerText;
-        const away_team = document.getElementById("away_wovles").innerText;
-        const amount = document.getElementById("Amount_for_big_Arsenal").value;
-        const security_code = document.getElementById("Security_for_big_Arsenal").value;
-
-        alert(home_team + away_team + amount + security_code + type_choice);
-        //true_or_false = 0;
+    if(s_or_fail == "fail"){
+        alert('you must login first before having a bet')
     }
-    /*const amount = document.getElementById("Amount_for_betting").value;
-    const security_code = document.getElementById("Security_for_betting").value;
-    */
-    //alert(amount + security_code);
-    if(true_or_false == 0){
-        alert('You have not chosen which type to bet on');
+    else{
+        if(true_or_false == 1){
+            //const home_team = document.getElementById("team_name").value;
+            const home_team = document.getElementById("home_Arsenal").innerText;
+            const away_team = document.getElementById("away_wovles").innerText;
+            const amount = document.getElementById("Amount_for_big_Arsenal").value;
+            const security_code = document.getElementById("Security_for_big_Arsenal").value;
+
+            alert(home_team + away_team + amount + security_code + type_choice);
+            //true_or_false = 0;
+        }
+        /*const amount = document.getElementById("Amount_for_betting").value;
+        const security_code = document.getElementById("Security_for_betting").value;
+        */
+        //alert(amount + security_code);
+        if(true_or_false == 0){
+            alert('You have not chosen which type to bet on');
+        }
     }
 }
 
 function submitCorner_Arsenal(){
-    if(true_or_false == 1){
-        //const home_team = document.getElementById("team_name").value;
-        const home_team = document.getElementById("home_Arsenal").innerText;
-        const away_team = document.getElementById("away_wovles").innerText;
-        const amount = document.getElementById("Amount_for_Corner_Arsenal").value;
-        const security_code = document.getElementById("Security_for_Corner_Arsenal").value;
-
-        alert(home_team + away_team + amount + security_code + type_choice);
-        //true_or_false = 0;
+    if(s_or_fail == "fail"){
+        alert('you must login first before having a bet')
     }
-    /*const amount = document.getElementById("Amount_for_betting").value;
-    const security_code = document.getElementById("Security_for_betting").value;
-    */
-    //alert(amount + security_code);
-    if(true_or_false == 0){
-        alert('You have not chosen which type to bet on');
+    else{
+        if(true_or_false == 1){
+            //const home_team = document.getElementById("team_name").value;
+            const home_team = document.getElementById("home_Arsenal").innerText;
+            const away_team = document.getElementById("away_wovles").innerText;
+            const amount = document.getElementById("Amount_for_Corner_Arsenal").value;
+            const security_code = document.getElementById("Security_for_Corner_Arsenal").value;
+
+            alert(home_team + away_team + amount + security_code + type_choice);
+            //true_or_false = 0;
+        }
+        /*const amount = document.getElementById("Amount_for_betting").value;
+        const security_code = document.getElementById("Security_for_betting").value;
+        */
+        //alert(amount + security_code);
+        if(true_or_false == 0){
+            alert('You have not chosen which type to bet on');
+        }
     }
 }
 
 function submitCard_Arsenal(){
-    if(true_or_false == 1){
-        //const home_team = document.getElementById("team_name").value;
-        const home_team = document.getElementById("home_Arsenal").innerText;
-        const away_team = document.getElementById("away_wovles").innerText;
-        const amount = document.getElementById("Amount_for_Card_Arsenal").value;
-        const security_code = document.getElementById("Security_for_Card_Arsenal").value;
-
-        alert(home_team + away_team + amount + security_code + type_choice);
-        //true_or_false = 0;
+    if(s_or_fail == "fail"){
+        alert('you must login first before having a bet')
     }
-    /*const amount = document.getElementById("Amount_for_betting").value;
-    const security_code = document.getElementById("Security_for_betting").value;
-    */
-    //alert(amount + security_code);
-    if(true_or_false == 0){
-        alert('You have not chosen which type to bet on');
+    else{
+        if(true_or_false == 1){
+            //const home_team = document.getElementById("team_name").value;
+            const home_team = document.getElementById("home_Arsenal").innerText;
+            const away_team = document.getElementById("away_wovles").innerText;
+            const amount = document.getElementById("Amount_for_Card_Arsenal").value;
+            const security_code = document.getElementById("Security_for_Card_Arsenal").value;
+
+            alert(home_team + away_team + amount + security_code + type_choice);
+            //true_or_false = 0;
+        }
+        /*const amount = document.getElementById("Amount_for_betting").value;
+        const security_code = document.getElementById("Security_for_betting").value;
+        */
+        //alert(amount + security_code);
+        if(true_or_false == 0){
+            alert('You have not chosen which type to bet on');
+        }
     }
 }
 
 
 function submitStat_Southampton(){
-    if(true_or_false == 1){
-        //const home_team = document.getElementById("team_name").value;
-        const home_team = document.getElementById("Southampton").innerText;
-        const away_team = document.getElementById("away_liverpool").innerText;
-        const amount = document.getElementById("Amount_for_betting_Southampton").value;
-        const security_code = document.getElementById("Security_for_betting_Southampton").value;
-
-        alert(home_team + away_team + amount + security_code + type_choice);
-        //true_or_false = 0;
+    if(s_or_fail == "fail"){
+        alert('you must login first before having a bet')
     }
-    /*const amount = document.getElementById("Amount_for_betting").value;
-    const security_code = document.getElementById("Security_for_betting").value;
-    */
-    //alert(amount + security_code);
-    if(true_or_false == 0){
-        alert('You have not chosen which type to bet on');
+    else{
+        if(true_or_false == 1){
+            //const home_team = document.getElementById("team_name").value;
+            const home_team = document.getElementById("Southampton").innerText;
+            const away_team = document.getElementById("away_liverpool").innerText;
+            const amount = document.getElementById("Amount_for_betting_Southampton").value;
+            const security_code = document.getElementById("Security_for_betting_Southampton").value;
+
+            alert(home_team + away_team + amount + security_code + type_choice);
+            //true_or_false = 0;
+        }
+        /*const amount = document.getElementById("Amount_for_betting").value;
+        const security_code = document.getElementById("Security_for_betting").value;
+        */
+        //alert(amount + security_code);
+        if(true_or_false == 0){
+            alert('You have not chosen which type to bet on');
+        }
     }
 }
 
 function submitbig_Southampton(){
-    if(true_or_false == 1){
-        //const home_team = document.getElementById("team_name").value;
-        const home_team = document.getElementById("Southampton").innerText;
-        const away_team = document.getElementById("away_liverpool").innerText;
-        const amount = document.getElementById("Amount_for_big_Southampton").value;
-        const security_code = document.getElementById("Security_for_big_Southampton").value;
-
-        alert(home_team + away_team + amount + security_code + type_choice);
-        //true_or_false = 0;
+    if(s_or_fail == "fail"){
+        alert('you must login first before having a bet')
     }
-    /*const amount = document.getElementById("Amount_for_betting").value;
-    const security_code = document.getElementById("Security_for_betting").value;
-    */
-    //alert(amount + security_code);
-    if(true_or_false == 0){
-        alert('You have not chosen which type to bet on');
+    else{
+        if(true_or_false == 1){
+            //const home_team = document.getElementById("team_name").value;
+            const home_team = document.getElementById("Southampton").innerText;
+            const away_team = document.getElementById("away_liverpool").innerText;
+            const amount = document.getElementById("Amount_for_big_Southampton").value;
+            const security_code = document.getElementById("Security_for_big_Southampton").value;
+
+            alert(home_team + away_team + amount + security_code + type_choice);
+            //true_or_false = 0;
+        }
+        /*const amount = document.getElementById("Amount_for_betting").value;
+        const security_code = document.getElementById("Security_for_betting").value;
+        */
+        //alert(amount + security_code);
+        if(true_or_false == 0){
+            alert('You have not chosen which type to bet on');
+        }
     }
 }
 
 function submitCorner_Southampton(){
-    if(true_or_false == 1){
-        //const home_team = document.getElementById("team_name").value;
-        const home_team = document.getElementById("Southampton").innerText;
-        const away_team = document.getElementById("away_liverpool").innerText;
-        const amount = document.getElementById("Amount_for_Corner_Southampton").value;
-        const security_code = document.getElementById("Security_for_Corner_Southampton").value;
-
-        alert(home_team + away_team + amount + security_code + type_choice);
-        //true_or_false = 0;
+    if(s_or_fail == "fail"){
+        alert('you must login first before having a bet')
     }
-    /*const amount = document.getElementById("Amount_for_betting").value;
-    const security_code = document.getElementById("Security_for_betting").value;
-    */
-    //alert(amount + security_code);
-    if(true_or_false == 0){
-        alert('You have not chosen which type to bet on');
+    else{
+        if(true_or_false == 1){
+            //const home_team = document.getElementById("team_name").value;
+            const home_team = document.getElementById("Southampton").innerText;
+            const away_team = document.getElementById("away_liverpool").innerText;
+            const amount = document.getElementById("Amount_for_Corner_Southampton").value;
+            const security_code = document.getElementById("Security_for_Corner_Southampton").value;
+
+            alert(home_team + away_team + amount + security_code + type_choice);
+            //true_or_false = 0;
+        }
+        /*const amount = document.getElementById("Amount_for_betting").value;
+        const security_code = document.getElementById("Security_for_betting").value;
+        */
+        //alert(amount + security_code);
+        if(true_or_false == 0){
+            alert('You have not chosen which type to bet on');
+        }
     }
 }
 
 function submitCard_Southampton(){
-    if(true_or_false == 1){
-        //const home_team = document.getElementById("team_name").value;
-        const home_team = document.getElementById("Southampton").innerText;
-        const away_team = document.getElementById("away_liverpool").innerText;
-        const amount = document.getElementById("Amount_for_Card_Southampton").value;
-        const security_code = document.getElementById("Security_for_Card_Southampton").value;
-
-        alert(home_team + away_team + amount + security_code + type_choice);
-        //true_or_false = 0;
+    if(s_or_fail == "fail"){
+        alert('you must login first before having a bet')
     }
-    /*const amount = document.getElementById("Amount_for_betting").value;
-    const security_code = document.getElementById("Security_for_betting").value;
-    */
-    //alert(amount + security_code);
-    if(true_or_false == 0){
-        alert('You have not chosen which type to bet on');
+    else{
+        if(true_or_false == 1){
+            //const home_team = document.getElementById("team_name").value;
+            const home_team = document.getElementById("Southampton").innerText;
+            const away_team = document.getElementById("away_liverpool").innerText;
+            const amount = document.getElementById("Amount_for_Card_Southampton").value;
+            const security_code = document.getElementById("Security_for_Card_Southampton").value;
+
+            alert(home_team + away_team + amount + security_code + type_choice);
+            //true_or_false = 0;
+        }
+        /*const amount = document.getElementById("Amount_for_betting").value;
+        const security_code = document.getElementById("Security_for_betting").value;
+        */
+        //alert(amount + security_code);
+        if(true_or_false == 0){
+            alert('You have not chosen which type to bet on');
+        }
     }
 }
 
@@ -774,7 +941,7 @@ function login(){
     const login_username = document.getElementById("login_username").value;
     const login_pwd = document.getElementById("login_pwd").value;
 
-    alert(login_username + login_pwd);
+    //alert(login_username + login_pwd);
     var xhr = new XMLHttpRequest();
     var url = "http://yourserver.com/yourServlet";
     xhr.open("POST", url, true);
@@ -786,6 +953,14 @@ function login(){
     };
 
     xhr.send(JSON.stringify(data));
+
+    //s_or_fail = "fail";
+    if(s_or_fail == "fail"){
+        alert('failure of login, please make sure you type in the correct username and pwd');
+    }
+    if(s_or_fail == "success"){
+
+    }
 }
 
 function signup(){
