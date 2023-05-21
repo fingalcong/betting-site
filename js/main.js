@@ -13,10 +13,12 @@ $(document).ready(function() {
 
 let true_or_false = 0;
 let type_choice = '';
-let s_or_fail = "fail";
+//document.cookie = "authorization=success";
 
 function submitStat(){
-    if(s_or_fail == "fail"){
+    //console.log(result[1])
+
+    if(document.cookie.indexOf('authorization=') == -1){
         alert('you must login first before having a bet')
     }
     else{
@@ -40,7 +42,7 @@ function submitStat(){
 }
 
 function submitStat_Villa(){
-    if(s_or_fail == "fail"){
+    if(document.cookie.indexOf('authorization=') == -1){
         alert('you must login first before having a bet')
     }
     else{
@@ -65,7 +67,7 @@ function submitStat_Villa(){
 }
 
 function submitbig_Villa(){
-    if(s_or_fail == "fail"){
+    if(document.cookie.indexOf('authorization=') == -1){
         alert('you must login first before having a bet')
     }
     else{
@@ -90,7 +92,7 @@ function submitbig_Villa(){
 }
 
 function submitCorner_Villa(){
-    if(s_or_fail == "fail"){
+    if(document.cookie.indexOf('authorization=') == -1){
         alert('you must login first before having a bet')
     }
     else{
@@ -115,7 +117,7 @@ function submitCorner_Villa(){
 }
 
 function submitCard_Villa(){
-    if(s_or_fail == "fail"){
+    if(document.cookie.indexOf('authorization=') == -1){
         alert('you must login first before having a bet')
     }
     else{
@@ -140,7 +142,7 @@ function submitCard_Villa(){
 }
 
 function submitStat_Everton(){
-    if(s_or_fail == "fail"){
+    if(document.cookie.indexOf('authorization=') == -1){
         alert('you must login first before having a bet')
     }
     else{
@@ -165,7 +167,7 @@ function submitStat_Everton(){
 }
 
 function submitbig_Everton(){
-    if(s_or_fail == "fail"){
+    if(document.cookie.indexOf('authorization=') == -1){
         alert('you must login first before having a bet')
     }
     else{
@@ -190,7 +192,7 @@ function submitbig_Everton(){
 }
 
 function submitCorner_Everton(){
-    if(s_or_fail == "fail"){
+    if(document.cookie.indexOf('authorization=') == -1){
         alert('you must login first before having a bet')
     }
     else{
@@ -215,7 +217,7 @@ function submitCorner_Everton(){
 }
 
 function submitCard_Everton(){
-    if(s_or_fail == "fail"){
+    if(document.cookie.indexOf('authorization=') == -1){
         alert('you must login first before having a bet')
     }
     else{
@@ -240,7 +242,7 @@ function submitCard_Everton(){
 }
 
 function submitStat_Leeds(){
-    if(s_or_fail == "fail"){
+    if(document.cookie.indexOf('authorization=') == -1){
         alert('you must login first before having a bet')
     }
     else{
@@ -265,7 +267,7 @@ function submitStat_Leeds(){
 }
 
 function submitbig_Leeds(){
-    if(s_or_fail == "fail"){
+    if(document.cookie.indexOf('authorization=') == -1){
         alert('you must login first before having a bet')
     }
     else{
@@ -290,7 +292,7 @@ function submitbig_Leeds(){
 }
 
 function submitCorner_Leeds(){
-    if(s_or_fail == "fail"){
+    if(document.cookie.indexOf('authorization=') == -1){
         alert('you must login first before having a bet')
     }
     else{
@@ -315,7 +317,7 @@ function submitCorner_Leeds(){
 }
 
 function submitCard_Leeds(){
-    if(s_or_fail == "fail"){
+    if(document.cookie.indexOf('authorization=') == -1){
         alert('you must login first before having a bet')
     }
     else{
@@ -340,7 +342,7 @@ function submitCard_Leeds(){
 }
 
 function submitStat_United(){
-    if(s_or_fail == "fail"){
+    if(document.cookie.indexOf('authorization=') == -1){
         alert('you must login first before having a bet')
     }
     else{
@@ -365,7 +367,7 @@ function submitStat_United(){
 }
 
 function submitbig_United(){
-    if(s_or_fail == "fail"){
+    if(document.cookie.indexOf('authorization=') == -1){
         alert('you must login first before having a bet')
     }
     else{
@@ -390,7 +392,7 @@ function submitbig_United(){
 }
 
 function submitCorner_United(){
-    if(s_or_fail == "fail"){
+    if(document.cookie.indexOf('authorization=') == -1){
         alert('you must login first before having a bet')
     }
     else{
@@ -415,7 +417,7 @@ function submitCorner_United(){
 }
 
 function submitCard_United(){
-    if(s_or_fail == "fail"){
+    if(document.cookie.indexOf('authorization=') == -1){
         alert('you must login first before having a bet')
     }
     else{
@@ -440,7 +442,7 @@ function submitCard_United(){
 }
 
 function submitStat_Chelsea(){
-    if(s_or_fail == "fail"){
+    if(document.cookie.indexOf('authorization=') == -1){
         alert('you must login first before having a bet')
     }
     else{
@@ -465,7 +467,7 @@ function submitStat_Chelsea(){
 }
 
 function submitbig_Chelsea(){
-    if(s_or_fail == "fail"){
+    if(document.cookie.indexOf('authorization=') == -1){
         alert('you must login first before having a bet')
     }
     else{
@@ -490,7 +492,7 @@ function submitbig_Chelsea(){
 }
 
 function submitCorner_Chelsea(){
-    if(s_or_fail == "fail"){
+    if(document.cookie.indexOf('authorization=') == -1){
         alert('you must login first before having a bet')
     }
     else{
@@ -515,7 +517,7 @@ function submitCorner_Chelsea(){
 }
 
 function submitCard_Chelsea(){
-    if(s_or_fail == "fail"){
+    if(document.cookie.indexOf('authorization=') == -1){
         alert('you must login first before having a bet')
     }
     else{
@@ -540,7 +542,7 @@ function submitCard_Chelsea(){
 }
 
 function submitStat_Leicester(){
-    if(s_or_fail == "fail"){
+    if(document.cookie.indexOf('authorization=') == -1){
         alert('you must login first before having a bet')
     }
     else{
@@ -565,7 +567,7 @@ function submitStat_Leicester(){
 }
 
 function submitbig_Leicester(){
-    if(s_or_fail == "fail"){
+    if(document.cookie.indexOf('authorization=') == -1){
         alert('you must login first before having a bet')
     }
     else{
@@ -590,7 +592,7 @@ function submitbig_Leicester(){
 }
 
 function submitCorner_Leicester(){
-    if(s_or_fail == "fail"){
+    if(document.cookie.indexOf('authorization=') == -1){
         alert('you must login first before having a bet')
     }
     else{
@@ -615,7 +617,7 @@ function submitCorner_Leicester(){
 }
 
 function submitCard_Leicester(){
-    if(s_or_fail == "fail"){
+    if(document.cookie.indexOf('authorization=') == -1){
         alert('you must login first before having a bet')
     }
     else{
@@ -640,7 +642,7 @@ function submitCard_Leicester(){
 }
 
 function submitStat_Arsenal(){
-    if(s_or_fail == "fail"){
+    if(document.cookie.indexOf('authorization=') == -1){
         alert('you must login first before having a bet')
     }
     else{
@@ -665,7 +667,7 @@ function submitStat_Arsenal(){
 }
 
 function submitbig_Arsenal(){
-    if(s_or_fail == "fail"){
+    if(document.cookie.indexOf('authorization=') == -1){
         alert('you must login first before having a bet')
     }
     else{
@@ -690,7 +692,7 @@ function submitbig_Arsenal(){
 }
 
 function submitCorner_Arsenal(){
-    if(s_or_fail == "fail"){
+    if(document.cookie.indexOf('authorization=') == -1){
         alert('you must login first before having a bet')
     }
     else{
@@ -715,7 +717,7 @@ function submitCorner_Arsenal(){
 }
 
 function submitCard_Arsenal(){
-    if(s_or_fail == "fail"){
+    if(document.cookie.indexOf('authorization=') == -1){
         alert('you must login first before having a bet')
     }
     else{
@@ -741,7 +743,7 @@ function submitCard_Arsenal(){
 
 
 function submitStat_Southampton(){
-    if(s_or_fail == "fail"){
+    if(document.cookie.indexOf('authorization=') == -1){
         alert('you must login first before having a bet')
     }
     else{
@@ -766,7 +768,7 @@ function submitStat_Southampton(){
 }
 
 function submitbig_Southampton(){
-    if(s_or_fail == "fail"){
+    if(document.cookie.indexOf('authorization=') == -1){
         alert('you must login first before having a bet')
     }
     else{
@@ -791,7 +793,7 @@ function submitbig_Southampton(){
 }
 
 function submitCorner_Southampton(){
-    if(s_or_fail == "fail"){
+    if(document.cookie.indexOf('authorization=') == -1){
         alert('you must login first before having a bet')
     }
     else{
@@ -816,7 +818,7 @@ function submitCorner_Southampton(){
 }
 
 function submitCard_Southampton(){
-    if(s_or_fail == "fail"){
+    if(document.cookie.indexOf('authorization=') == -1){
         alert('you must login first before having a bet')
     }
     else{
@@ -954,14 +956,77 @@ function login(){
 
     xhr.send(JSON.stringify(data));
 
-    //s_or_fail = "fail";
-    if(s_or_fail == "fail"){
+    //s_or_fail = "success"; //we will collect this data from back-end later
+    document.cookie = "authorization=success";
+    if(document.cookie.indexOf('authorization=') == -1){
         alert('failure of login, please make sure you type in the correct username and pwd');
     }
     if(s_or_fail == "success"){
+        var tbody = document.querySelector('#data_purchase_history');
+        var tr = document.createElement('tr');
+        var td0 = document.createElement('td');
+        var td1 = document.createElement('td');
+        var td2 = document.createElement('td');
+        var td3 = document.createElement('td');
+        var td4 = document.createElement('td');
+        var td5 = document.createElement('td');
+        var td6 = document.createElement('td');
 
+        td0.innerHTML = '1'; //change this num to a count when utilizing later
+        td1.innerHTML = 'Arsenal';
+        td2.innerHTML = 'Liverpool';
+        td3.innerHTML = 'Big or Small';
+        td4.innerHTML = 'Big';
+        td5.innerHTML = '50000';
+        td6.innerHTML = 'UCI MCS';
+
+        tr.append(td0);
+        tr.append(td1);
+        tr.append(td2);
+        tr.append(td3);
+        tr.append(td4);
+        tr.append(td5);
+        tr.append(td6);
+        tbody.append(tr);
+        //s_or_fail = 'success';
     }
 }
+
+/*document.getElementById("purchase_history").onclick = function () {
+    if(document.cookie.indexOf('authorization=') == -1){
+        alert('failure of login, please make sure you type in the correct username and pwd');
+        var temp = document.getElementById("warning-message");
+        temp.innerText = "Login Succeed";
+    }
+    if(s_or_fail == "success"){
+        var tbody = document.querySelector('#data_purchase_history');
+        var tr = document.createElement('tr');
+        var td0 = document.createElement('td');
+        var td1 = document.createElement('td');
+        var td2 = document.createElement('td');
+        var td3 = document.createElement('td');
+        var td4 = document.createElement('td');
+        var td5 = document.createElement('td');
+        var td6 = document.createElement('td');
+
+        td0.innerHTML = '1'; //change this num to a count when utilizing later
+        td1.innerHTML = 'Arsenal';
+        td2.innerHTML = 'Liverpool';
+        td3.innerHTML = 'Big or Small';
+        td4.innerHTML = 'Big';
+        td5.innerHTML = '50000';
+        td6.innerHTML = 'UCI MCS';
+
+        tr.append(td0);
+        tr.append(td1);
+        tr.append(td2);
+        tr.append(td3);
+        tr.append(td4);
+        tr.append(td5);
+        tr.append(td6);
+        tbody.append(tr);
+    }
+  };*/
 
 function signup(){
     const username = document.getElementById("signup_username").value;

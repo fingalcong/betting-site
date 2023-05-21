@@ -89,16 +89,30 @@
                 </form>
 	    </section>
 	    <article class="about-section content px-3 py-5 p-md-5">
-		    <div class="container">			    
-			    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. </p>
-			    <figure><img class="img-fluid" src="images/about-me.jpg" alt="image"></figure>
-			    <h5 class="mt-5">About The Blog</h5>
-			    <p>Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus.</p>
-			    <h5 class="mt-5">My Skills and Experiences</h5>
-			    <p>Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi.</p>
-			    <h5 class="mt-5">Side Projects</h5>
-			    <p>Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi.</p>
-			    
+		    <div class="container">	
+				<figure><img class="img-fluid" src="images/soccer betting_image.jpg" alt="image"></figure>		    
+			    <h3 id="warning-message">Please log in first to check your own purchase history. </h3>
+			    <!--<figure><img class="img-fluid" src="images/soccer betting_image.jpg" alt="image"></figure>-->
+			    <h5 class="mt-5">Purchase History Table</h5>
+				<h6 id="username-purchase">Alex</h6>
+				<div>
+					<table class="table table-striped my-5" id="purchase-table">
+						<thead>
+							<tr>
+								<th scope="row">#</th>
+								<td>Home Team</td>
+								<td>Away Team</td>
+								<td>Betting Type</td>
+								<td>Subtype</td>
+								<td>Amount</td>
+								<td>Order Code</td>
+							</tr>
+						</thead>
+						<tbody id="data_purchase_history">
+							<!--add information automatically after getting data from back-end-->
+						</tbody>
+					</table>
+				</div>    
 		    </div>
 	    </article>
 	    
@@ -118,6 +132,37 @@
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 	<script src="js/main.js"></script>
+	<script>
+		//let temp = "success";
+		if(temp == "success"){
+			var tbody = document.querySelector('#data_purchase_history');
+			var tr = document.createElement('tr');
+			var td0 = document.createElement('td');
+			var td1 = document.createElement('td');
+			var td2 = document.createElement('td');
+			var td3 = document.createElement('td');
+			var td4 = document.createElement('td');
+			var td5 = document.createElement('td');
+			var td6 = document.createElement('td');
+
+			td0.innerHTML = '1'; //change this num to a count when utilizing later
+			td1.innerHTML = 'Arsenal';
+			td2.innerHTML = 'Liverpool';
+			td3.innerHTML = 'Big or Small';
+			td4.innerHTML = 'Big';
+			td5.innerHTML = '50000';
+			td6.innerHTML = 'UCI MCS';
+
+			tr.append(td0);
+			tr.append(td1);
+			tr.append(td2);
+			tr.append(td3);
+			tr.append(td4);
+			tr.append(td5);
+			tr.append(td6);
+			tbody.append(tr);
+		}
+	</script> 
 
 </body>
 </html> 

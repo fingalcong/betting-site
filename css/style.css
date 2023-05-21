@@ -1035,3 +1035,7 @@ div.comment:first-of-type {
     padding-left: 16.5%;
     padding-right: 11%;
 }
+
+#warning-message{
+    color: #fc0404;
+}
