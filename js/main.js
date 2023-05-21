@@ -961,7 +961,7 @@ function login(){
     if(document.cookie.indexOf('authorization=') == -1){
         alert('failure of login, please make sure you type in the correct username and pwd');
     }
-    if(s_or_fail == "success"){
+    else{
         var tbody = document.querySelector('#data_purchase_history');
         var tr = document.createElement('tr');
         var td0 = document.createElement('td');

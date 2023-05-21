@@ -134,7 +134,8 @@
 	<script src="js/main.js"></script>
 	<script>
 		//let temp = "success";
-		if(temp == "success"){
+		const result = document.cookie.match(/authorization=(\w+)/);
+		if(result[1] == "success"){
 			var tbody = document.querySelector('#data_purchase_history');
 			var tr = document.createElement('tr');
 			var td0 = document.createElement('td');
