@@ -136,6 +136,12 @@
 		//let temp = "success";
 		const result = document.cookie.match(/authorization=(\w+)/);
 		if(result[1] == "success"){
+			var text = document.getElementById('warning-message');
+			text.innerText = "Successfully Log in";
+			text.style.color = "green";
+			var username = document.getElementById('username-purchase');
+			username.innerText = "Username" + ": Alex";
+			username.style.color = "blue";
 			var tbody = document.querySelector('#data_purchase_history');
 			var tr = document.createElement('tr');
 			var td0 = document.createElement('td');

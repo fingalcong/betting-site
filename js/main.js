@@ -13,6 +13,7 @@ $(document).ready(function() {
 
 let true_or_false = 0;
 let type_choice = '';
+let subtype_choice = '';
 //document.cookie = "authorization=success";
 
 function submitStat(){
@@ -27,7 +28,7 @@ function submitStat(){
             const amount = document.getElementById("Amount_for_betting").value;
             const security_code = document.getElementById("Security_for_betting").value;
 
-            alert(amount + security_code + type_choice);
+            alert(amount + security_code + type_choice + subtype_choice);
             //true_or_false = 0;
         }
     
@@ -54,6 +55,22 @@ function submitStat_Villa(){
             const security_code = document.getElementById("Security_for_betting_Villa").value;
 
             alert(home_team + away_team + amount + security_code + type_choice);
+
+            var xhr = new XMLHttpRequest();
+            var url = "http://yourserver.com/yourServlet";
+            xhr.open("POST", url, true);
+            xhr.setRequestHeader("Content-Type", "application/json");
+
+            var data = {
+                home: home_team,
+                away: away_team,
+                amount: amount,
+                type: type_choice,
+                subtype: subtype_choice,
+                orderid: security_code
+            };
+
+            xhr.send(JSON.stringify(data));
             //true_or_false = 0;
         }
         /*const amount = document.getElementById("Amount_for_betting").value;
@@ -66,7 +83,7 @@ function submitStat_Villa(){
     }
 }
 
-function submitbig_Villa(){
+function submitbig_Villa(){chooseSmall()
     if(document.cookie.indexOf('authorization=') == -1){
         alert('you must login first before having a bet')
     }
@@ -79,6 +96,22 @@ function submitbig_Villa(){
             const security_code = document.getElementById("Security_for_big_Villa").value;
 
             alert(home_team + away_team + amount + security_code + type_choice);
+
+            var xhr = new XMLHttpRequest();
+            var url = "http://yourserver.com/yourServlet";
+            xhr.open("POST", url, true);
+            xhr.setRequestHeader("Content-Type", "application/json");
+
+            var data = {
+                home: home_team,
+                away: away_team,
+                amount: amount,
+                type: type_choice,
+                subtype: subtype_choice,
+                orderid: security_code
+            };
+
+            xhr.send(JSON.stringify(data));
             //true_or_false = 0;
         }
         /*const amount = document.getElementById("Amount_for_betting").value;
@@ -104,6 +137,22 @@ function submitCorner_Villa(){
             const security_code = document.getElementById("Security_for_Corner_Villa").value;
 
             alert(home_team + away_team + amount + security_code + type_choice);
+
+            var xhr = new XMLHttpRequest();
+            var url = "http://yourserver.com/yourServlet";
+            xhr.open("POST", url, true);
+            xhr.setRequestHeader("Content-Type", "application/json");
+
+            var data = {
+                home: home_team,
+                away: away_team,
+                amount: amount,
+                type: type_choice,
+                subtype: subtype_choice,
+                orderid: security_code
+            };
+
+            xhr.send(JSON.stringify(data));
             //true_or_false = 0;
         }
         /*const amount = document.getElementById("Amount_for_betting").value;
@@ -129,6 +178,22 @@ function submitCard_Villa(){
             const security_code = document.getElementById("Security_for_Card_Villa").value;
 
             alert(home_team + away_team + amount + security_code + type_choice);
+
+            var xhr = new XMLHttpRequest();
+            var url = "http://yourserver.com/yourServlet";
+            xhr.open("POST", url, true);
+            xhr.setRequestHeader("Content-Type", "application/json");
+
+            var data = {
+                home: home_team,
+                away: away_team,
+                amount: amount,
+                type: type_choice,
+                subtype: subtype_choice,
+                orderid: security_code
+            };
+
+            xhr.send(JSON.stringify(data));
             //true_or_false = 0;
         }
         /*const amount = document.getElementById("Amount_for_betting").value;
@@ -154,6 +219,22 @@ function submitStat_Everton(){
             const security_code = document.getElementById("Security_for_betting_Everton").value;
 
             alert(home_team + away_team + amount + security_code + type_choice);
+
+            var xhr = new XMLHttpRequest();
+            var url = "http://yourserver.com/yourServlet";
+            xhr.open("POST", url, true);
+            xhr.setRequestHeader("Content-Type", "application/json");
+
+            var data = {
+                home: home_team,
+                away: away_team,
+                amount: amount,
+                type: type_choice,
+                subtype: subtype_choice,
+                orderid: security_code
+            };
+
+            xhr.send(JSON.stringify(data));
             //true_or_false = 0;
         }
         /*const amount = document.getElementById("Amount_for_betting").value;
@@ -179,6 +260,22 @@ function submitbig_Everton(){
             const security_code = document.getElementById("Security_for_big_Everton").value;
 
             alert(home_team + away_team + amount + security_code + type_choice);
+
+            var xhr = new XMLHttpRequest();
+            var url = "http://yourserver.com/yourServlet";
+            xhr.open("POST", url, true);
+            xhr.setRequestHeader("Content-Type", "application/json");
+
+            var data = {
+                home: home_team,
+                away: away_team,
+                amount: amount,
+                type: type_choice,
+                subtype: subtype_choice,
+                orderid: security_code
+            };
+
+            xhr.send(JSON.stringify(data));
             //true_or_false = 0;
         }
         /*const amount = document.getElementById("Amount_for_betting").value;
@@ -204,6 +301,22 @@ function submitCorner_Everton(){
             const security_code = document.getElementById("Security_for_Corner_Everton").value;
 
             alert(home_team + away_team + amount + security_code + type_choice);
+
+            var xhr = new XMLHttpRequest();
+            var url = "http://yourserver.com/yourServlet";
+            xhr.open("POST", url, true);
+            xhr.setRequestHeader("Content-Type", "application/json");
+
+            var data = {
+                home: home_team,
+                away: away_team,
+                amount: amount,
+                type: type_choice,
+                subtype: subtype_choice,
+                orderid: security_code
+            };
+
+            xhr.send(JSON.stringify(data));
             //true_or_false = 0;
         }
         /*const amount = document.getElementById("Amount_for_betting").value;
@@ -229,6 +342,22 @@ function submitCard_Everton(){
             const security_code = document.getElementById("Security_for_Card_Everton").value;
 
             alert(home_team + away_team + amount + security_code + type_choice);
+
+            var xhr = new XMLHttpRequest();
+            var url = "http://yourserver.com/yourServlet";
+            xhr.open("POST", url, true);
+            xhr.setRequestHeader("Content-Type", "application/json");
+
+            var data = {
+                home: home_team,
+                away: away_team,
+                amount: amount,
+                type: type_choice,
+                subtype: subtype_choice,
+                orderid: security_code
+            };
+
+            xhr.send(JSON.stringify(data));
             //true_or_false = 0;
         }
         /*const amount = document.getElementById("Amount_for_betting").value;
@@ -254,6 +383,22 @@ function submitStat_Leeds(){
             const security_code = document.getElementById("Security_for_betting_Leeds").value;
 
             alert(home_team + away_team + amount + security_code + type_choice);
+
+            var xhr = new XMLHttpRequest();
+            var url = "http://yourserver.com/yourServlet";
+            xhr.open("POST", url, true);
+            xhr.setRequestHeader("Content-Type", "application/json");
+
+            var data = {
+                home: home_team,
+                away: away_team,
+                amount: amount,
+                type: type_choice,
+                subtype: subtype_choice,
+                orderid: security_code
+            };
+
+            xhr.send(JSON.stringify(data));
             //true_or_false = 0;
         }
         /*const amount = document.getElementById("Amount_for_betting").value;
@@ -279,6 +424,22 @@ function submitbig_Leeds(){
             const security_code = document.getElementById("Security_for_big_Leeds").value;
 
             alert(home_team + away_team + amount + security_code + type_choice);
+
+            var xhr = new XMLHttpRequest();
+            var url = "http://yourserver.com/yourServlet";
+            xhr.open("POST", url, true);
+            xhr.setRequestHeader("Content-Type", "application/json");
+
+            var data = {
+                home: home_team,
+                away: away_team,
+                amount: amount,
+                type: type_choice,
+                subtype: subtype_choice,
+                orderid: security_code
+            };
+
+            xhr.send(JSON.stringify(data));
             //true_or_false = 0;
         }
         /*const amount = document.getElementById("Amount_for_betting").value;
@@ -304,6 +465,22 @@ function submitCorner_Leeds(){
             const security_code = document.getElementById("Security_for_Corner_Leeds").value;
 
             alert(home_team + away_team + amount + security_code + type_choice);
+
+            var xhr = new XMLHttpRequest();
+            var url = "http://yourserver.com/yourServlet";
+            xhr.open("POST", url, true);
+            xhr.setRequestHeader("Content-Type", "application/json");
+
+            var data = {
+                home: home_team,
+                away: away_team,
+                amount: amount,
+                type: type_choice,
+                subtype: subtype_choice,
+                orderid: security_code
+            };
+
+            xhr.send(JSON.stringify(data));
             //true_or_false = 0;
         }
         /*const amount = document.getElementById("Amount_for_betting").value;
@@ -329,6 +506,22 @@ function submitCard_Leeds(){
             const security_code = document.getElementById("Security_for_Card_Leeds").value;
 
             alert(home_team + away_team + amount + security_code + type_choice);
+
+            var xhr = new XMLHttpRequest();
+            var url = "http://yourserver.com/yourServlet";
+            xhr.open("POST", url, true);
+            xhr.setRequestHeader("Content-Type", "application/json");
+
+            var data = {
+                home: home_team,
+                away: away_team,
+                amount: amount,
+                type: type_choice,
+                subtype: subtype_choice,
+                orderid: security_code
+            };
+
+            xhr.send(JSON.stringify(data));
             //true_or_false = 0;
         }
         /*const amount = document.getElementById("Amount_for_betting").value;
@@ -354,6 +547,22 @@ function submitStat_United(){
             const security_code = document.getElementById("Security_for_betting_United").value;
 
             alert(home_team + away_team + amount + security_code + type_choice);
+
+            var xhr = new XMLHttpRequest();
+            var url = "http://yourserver.com/yourServlet";
+            xhr.open("POST", url, true);
+            xhr.setRequestHeader("Content-Type", "application/json");
+
+            var data = {
+                home: home_team,
+                away: away_team,
+                amount: amount,
+                type: type_choice,
+                subtype: subtype_choice,
+                orderid: security_code
+            };
+
+            xhr.send(JSON.stringify(data));
             //true_or_false = 0;
         }
         /*const amount = document.getElementById("Amount_for_betting").value;
@@ -379,6 +588,22 @@ function submitbig_United(){
             const security_code = document.getElementById("Security_for_big_United").value;
 
             alert(home_team + away_team + amount + security_code + type_choice);
+
+            var xhr = new XMLHttpRequest();
+            var url = "http://yourserver.com/yourServlet";
+            xhr.open("POST", url, true);
+            xhr.setRequestHeader("Content-Type", "application/json");
+
+            var data = {
+                home: home_team,
+                away: away_team,
+                amount: amount,
+                type: type_choice,
+                subtype: subtype_choice,
+                orderid: security_code
+            };
+
+            xhr.send(JSON.stringify(data));
             //true_or_false = 0;
         }
         /*const amount = document.getElementById("Amount_for_betting").value;
@@ -404,6 +629,22 @@ function submitCorner_United(){
             const security_code = document.getElementById("Security_for_Corner_United").value;
 
             alert(home_team + away_team + amount + security_code + type_choice);
+
+            var xhr = new XMLHttpRequest();
+            var url = "http://yourserver.com/yourServlet";
+            xhr.open("POST", url, true);
+            xhr.setRequestHeader("Content-Type", "application/json");
+
+            var data = {
+                home: home_team,
+                away: away_team,
+                amount: amount,
+                type: type_choice,
+                subtype: subtype_choice,
+                orderid: security_code
+            };
+
+            xhr.send(JSON.stringify(data));
             //true_or_false = 0;
         }
         /*const amount = document.getElementById("Amount_for_betting").value;
@@ -429,6 +670,22 @@ function submitCard_United(){
             const security_code = document.getElementById("Security_for_Card_United").value;
 
             alert(home_team + away_team + amount + security_code + type_choice);
+
+            var xhr = new XMLHttpRequest();
+            var url = "http://yourserver.com/yourServlet";
+            xhr.open("POST", url, true);
+            xhr.setRequestHeader("Content-Type", "application/json");
+
+            var data = {
+                home: home_team,
+                away: away_team,
+                amount: amount,
+                type: type_choice,
+                subtype: subtype_choice,
+                orderid: security_code
+            };
+
+            xhr.send(JSON.stringify(data));
             //true_or_false = 0;
         }
         /*const amount = document.getElementById("Amount_for_betting").value;
@@ -454,6 +711,22 @@ function submitStat_Chelsea(){
             const security_code = document.getElementById("Security_for_betting_Chelsea").value;
 
             alert(home_team + away_team + amount + security_code + type_choice);
+
+            var xhr = new XMLHttpRequest();
+            var url = "http://yourserver.com/yourServlet";
+            xhr.open("POST", url, true);
+            xhr.setRequestHeader("Content-Type", "application/json");
+
+            var data = {
+                home: home_team,
+                away: away_team,
+                amount: amount,
+                type: type_choice,
+                subtype: subtype_choice,
+                orderid: security_code
+            };
+
+            xhr.send(JSON.stringify(data));
             //true_or_false = 0;
         }
         /*const amount = document.getElementById("Amount_for_betting").value;
@@ -479,6 +752,22 @@ function submitbig_Chelsea(){
             const security_code = document.getElementById("Security_for_big_Chelsea").value;
 
             alert(home_team + away_team + amount + security_code + type_choice);
+
+            var xhr = new XMLHttpRequest();
+            var url = "http://yourserver.com/yourServlet";
+            xhr.open("POST", url, true);
+            xhr.setRequestHeader("Content-Type", "application/json");
+
+            var data = {
+                home: home_team,
+                away: away_team,
+                amount: amount,
+                type: type_choice,
+                subtype: subtype_choice,
+                orderid: security_code
+            };
+
+            xhr.send(JSON.stringify(data));
             //true_or_false = 0;
         }
         /*const amount = document.getElementById("Amount_for_betting").value;
@@ -504,6 +793,22 @@ function submitCorner_Chelsea(){
             const security_code = document.getElementById("Security_for_Corner_Chelsea").value;
 
             alert(home_team + away_team + amount + security_code + type_choice);
+
+            var xhr = new XMLHttpRequest();
+            var url = "http://yourserver.com/yourServlet";
+            xhr.open("POST", url, true);
+            xhr.setRequestHeader("Content-Type", "application/json");
+
+            var data = {
+                home: home_team,
+                away: away_team,
+                amount: amount,
+                type: type_choice,
+                subtype: subtype_choice,
+                orderid: security_code
+            };
+
+            xhr.send(JSON.stringify(data));
             //true_or_false = 0;
         }
         /*const amount = document.getElementById("Amount_for_betting").value;
@@ -529,6 +834,22 @@ function submitCard_Chelsea(){
             const security_code = document.getElementById("Security_for_Card_Chelsea").value;
 
             alert(home_team + away_team + amount + security_code + type_choice);
+
+            var xhr = new XMLHttpRequest();
+            var url = "http://yourserver.com/yourServlet";
+            xhr.open("POST", url, true);
+            xhr.setRequestHeader("Content-Type", "application/json");
+
+            var data = {
+                home: home_team,
+                away: away_team,
+                amount: amount,
+                type: type_choice,
+                subtype: subtype_choice,
+                orderid: security_code
+            };
+
+            xhr.send(JSON.stringify(data));
             //true_or_false = 0;
         }
         /*const amount = document.getElementById("Amount_for_betting").value;
@@ -554,6 +875,22 @@ function submitStat_Leicester(){
             const security_code = document.getElementById("Security_for_betting_Leicester").value;
 
             alert(home_team + away_team + amount + security_code + type_choice);
+
+            var xhr = new XMLHttpRequest();
+            var url = "http://yourserver.com/yourServlet";
+            xhr.open("POST", url, true);
+            xhr.setRequestHeader("Content-Type", "application/json");
+
+            var data = {
+                home: home_team,
+                away: away_team,
+                amount: amount,
+                type: type_choice,
+                subtype: subtype_choice,
+                orderid: security_code
+            };
+
+            xhr.send(JSON.stringify(data));
             //true_or_false = 0;
         }
         /*const amount = document.getElementById("Amount_for_betting").value;
@@ -579,6 +916,22 @@ function submitbig_Leicester(){
             const security_code = document.getElementById("Security_for_big_Leicester").value;
 
             alert(home_team + away_team + amount + security_code + type_choice);
+
+            var xhr = new XMLHttpRequest();
+            var url = "http://yourserver.com/yourServlet";
+            xhr.open("POST", url, true);
+            xhr.setRequestHeader("Content-Type", "application/json");
+
+            var data = {
+                home: home_team,
+                away: away_team,
+                amount: amount,
+                type: type_choice,
+                subtype: subtype_choice,
+                orderid: security_code
+            };
+
+            xhr.send(JSON.stringify(data));
             //true_or_false = 0;
         }
         /*const amount = document.getElementById("Amount_for_betting").value;
@@ -604,6 +957,22 @@ function submitCorner_Leicester(){
             const security_code = document.getElementById("Security_for_Corner_Leicester").value;
 
             alert(home_team + away_team + amount + security_code + type_choice);
+
+            var xhr = new XMLHttpRequest();
+            var url = "http://yourserver.com/yourServlet";
+            xhr.open("POST", url, true);
+            xhr.setRequestHeader("Content-Type", "application/json");
+
+            var data = {
+                home: home_team,
+                away: away_team,
+                amount: amount,
+                type: type_choice,
+                subtype: subtype_choice,
+                orderid: security_code
+            };
+
+            xhr.send(JSON.stringify(data));
             //true_or_false = 0;
         }
         /*const amount = document.getElementById("Amount_for_betting").value;
@@ -629,6 +998,22 @@ function submitCard_Leicester(){
             const security_code = document.getElementById("Security_for_Card_Leicester").value;
 
             alert(home_team + away_team + amount + security_code + type_choice);
+
+            var xhr = new XMLHttpRequest();
+            var url = "http://yourserver.com/yourServlet";
+            xhr.open("POST", url, true);
+            xhr.setRequestHeader("Content-Type", "application/json");
+
+            var data = {
+                home: home_team,
+                away: away_team,
+                amount: amount,
+                type: type_choice,
+                subtype: subtype_choice,
+                orderid: security_code
+            };
+
+            xhr.send(JSON.stringify(data));
             //true_or_false = 0;
         }
         /*const amount = document.getElementById("Amount_for_betting").value;
@@ -654,6 +1039,22 @@ function submitStat_Arsenal(){
             const security_code = document.getElementById("Security_for_betting_Arsenal").value;
 
             alert(home_team + away_team + amount + security_code + type_choice);
+
+            var xhr = new XMLHttpRequest();
+            var url = "http://yourserver.com/yourServlet";
+            xhr.open("POST", url, true);
+            xhr.setRequestHeader("Content-Type", "application/json");
+
+            var data = {
+                home: home_team,
+                away: away_team,
+                amount: amount,
+                type: type_choice,
+                subtype: subtype_choice,
+                orderid: security_code
+            };
+
+            xhr.send(JSON.stringify(data));
             //true_or_false = 0;
         }
         /*const amount = document.getElementById("Amount_for_betting").value;
@@ -679,6 +1080,22 @@ function submitbig_Arsenal(){
             const security_code = document.getElementById("Security_for_big_Arsenal").value;
 
             alert(home_team + away_team + amount + security_code + type_choice);
+
+            var xhr = new XMLHttpRequest();
+            var url = "http://yourserver.com/yourServlet";
+            xhr.open("POST", url, true);
+            xhr.setRequestHeader("Content-Type", "application/json");
+
+            var data = {
+                home: home_team,
+                away: away_team,
+                amount: amount,
+                type: type_choice,
+                subtype: subtype_choice,
+                orderid: security_code
+            };
+
+            xhr.send(JSON.stringify(data));
             //true_or_false = 0;
         }
         /*const amount = document.getElementById("Amount_for_betting").value;
@@ -704,6 +1121,22 @@ function submitCorner_Arsenal(){
             const security_code = document.getElementById("Security_for_Corner_Arsenal").value;
 
             alert(home_team + away_team + amount + security_code + type_choice);
+
+            var xhr = new XMLHttpRequest();
+            var url = "http://yourserver.com/yourServlet";
+            xhr.open("POST", url, true);
+            xhr.setRequestHeader("Content-Type", "application/json");
+
+            var data = {
+                home: home_team,
+                away: away_team,
+                amount: amount,
+                type: type_choice,
+                subtype: subtype_choice,
+                orderid: security_code
+            };
+
+            xhr.send(JSON.stringify(data));
             //true_or_false = 0;
         }
         /*const amount = document.getElementById("Amount_for_betting").value;
@@ -729,6 +1162,22 @@ function submitCard_Arsenal(){
             const security_code = document.getElementById("Security_for_Card_Arsenal").value;
 
             alert(home_team + away_team + amount + security_code + type_choice);
+
+            var xhr = new XMLHttpRequest();
+            var url = "http://yourserver.com/yourServlet";
+            xhr.open("POST", url, true);
+            xhr.setRequestHeader("Content-Type", "application/json");
+
+            var data = {
+                home: home_team,
+                away: away_team,
+                amount: amount,
+                type: type_choice,
+                subtype: subtype_choice,
+                orderid: security_code
+            };
+
+            xhr.send(JSON.stringify(data));
             //true_or_false = 0;
         }
         /*const amount = document.getElementById("Amount_for_betting").value;
@@ -755,6 +1204,22 @@ function submitStat_Southampton(){
             const security_code = document.getElementById("Security_for_betting_Southampton").value;
 
             alert(home_team + away_team + amount + security_code + type_choice);
+
+            var xhr = new XMLHttpRequest();
+            var url = "http://yourserver.com/yourServlet";
+            xhr.open("POST", url, true);
+            xhr.setRequestHeader("Content-Type", "application/json");
+
+            var data = {
+                home: home_team,
+                away: away_team,
+                amount: amount,
+                type: type_choice,
+                subtype: subtype_choice,
+                orderid: security_code
+            };
+
+            xhr.send(JSON.stringify(data));
             //true_or_false = 0;
         }
         /*const amount = document.getElementById("Amount_for_betting").value;
@@ -780,6 +1245,22 @@ function submitbig_Southampton(){
             const security_code = document.getElementById("Security_for_big_Southampton").value;
 
             alert(home_team + away_team + amount + security_code + type_choice);
+
+            var xhr = new XMLHttpRequest();
+            var url = "http://yourserver.com/yourServlet";
+            xhr.open("POST", url, true);
+            xhr.setRequestHeader("Content-Type", "application/json");
+
+            var data = {
+                home: home_team,
+                away: away_team,
+                amount: amount,
+                type: type_choice,
+                subtype: subtype_choice,
+                orderid: security_code
+            };
+
+            xhr.send(JSON.stringify(data));
             //true_or_false = 0;
         }
         /*const amount = document.getElementById("Amount_for_betting").value;
@@ -805,6 +1286,22 @@ function submitCorner_Southampton(){
             const security_code = document.getElementById("Security_for_Corner_Southampton").value;
 
             alert(home_team + away_team + amount + security_code + type_choice);
+
+            var xhr = new XMLHttpRequest();
+            var url = "http://yourserver.com/yourServlet";
+            xhr.open("POST", url, true);
+            xhr.setRequestHeader("Content-Type", "application/json");
+
+            var data = {
+                home: home_team,
+                away: away_team,
+                amount: amount,
+                type: type_choice,
+                subtype: subtype_choice,
+                orderid: security_code
+            };
+
+            xhr.send(JSON.stringify(data));
             //true_or_false = 0;
         }
         /*const amount = document.getElementById("Amount_for_betting").value;
@@ -830,6 +1327,22 @@ function submitCard_Southampton(){
             const security_code = document.getElementById("Security_for_Card_Southampton").value;
 
             alert(home_team + away_team + amount + security_code + type_choice);
+
+            var xhr = new XMLHttpRequest();
+            var url = "http://yourserver.com/yourServlet";
+            xhr.open("POST", url, true);
+            xhr.setRequestHeader("Content-Type", "application/json");
+
+            var data = {
+                home: home_team,
+                away: away_team,
+                amount: amount,
+                type: type_choice,
+                subtype: subtype_choice,
+                orderid: security_code
+            };
+
+            xhr.send(JSON.stringify(data));
             //true_or_false = 0;
         }
         /*const amount = document.getElementById("Amount_for_betting").value;
@@ -843,42 +1356,62 @@ function submitCard_Southampton(){
 }
 
 function chooseWin(){
-    type_choice = 'win';
+    type_choice = 'winorloss';
+    subtype_choice = 'win';
     true_or_false = 1;
 }
 
 function chooseDraw(){
-    type_choice = 'draw';
+    type_choice = 'winorloss';
+    subtype_choice = 'draw';
     true_or_false = 1;
 }
 
 function chooseLoss(){
-    type_choice = 'loss';
+    type_choice = 'winorloss';
+    subtype_choice = 'loss';
     true_or_false = 1;
 }
 
 function chooseBig(){
-    type_choice = 'big';
+    type_choice = 'bigsmall';
+    subtype_choice = 'big';
     true_or_false = 1;
 }
 
 function chooseSmall(){
-    type_choice = 'small';
+    type_choice = 'bigsmall';
+    subtype_choice = 'small';
+    true_or_false = 1;
+}
+
+function cardBig(){
+    type_choice = 'cards';
+    subtype_choice = 'small';
+    true_or_false = 1;
+}
+
+function cardSmall(){
+    type_choice = 'cards';
+    subtype_choice = 'small';
     true_or_false = 1;
 }
 
 function chooseHome(){
-    type_choice = 'home';
+    type_choice = 'corners';
+    subtype_choice = 'home';
     true_or_false = 1;
 }
 
 function chooseSame(){
-    type_choice = 'same';
+    type_choice = 'corners';
+    subtype_choice = 'same';
     true_or_false = 1;
 }
 
 function chooseAway(){
-    type_choice = 'away';
+    type_choice = 'corners';
+    subtype_choice = 'away';
     true_or_false = 1;
 }
 
@@ -1030,13 +1563,17 @@ function login(){
 
 function signup(){
     const username = document.getElementById("signup_username").value;
+    const realname = document.getElementById("signup_realname").value;
     const email = document.getElementById("signup_email").value;
-    const pwd = document.getElementById("signup_pwd").value;
+    const password = document.getElementById("signup_pwd").value;
     const check_pwd = document.getElementById("rpt_pwd").value;
+    const age = document.getElementById("signup_age").value;
+    const phone = document.getElementById("signup_phone").value;
+    const address = document.getElementById("signup_address").value;
 
-    alert(username + email + pwd);
+    alert(username + email + password);
     
-    if(check_pwd != pwd){
+    if(check_pwd != password){
         alert("Please make sure that you type in the same password")
     }
 
@@ -1047,8 +1584,12 @@ function signup(){
 
     var data = {
         username: username,
+        realname: realname,
         email: email,
-        pwd: pwd
+        password: password,
+        age: age,
+        address: address,
+        phone: phone
     };
 
     xhr.send(JSON.stringify(data));
