@@ -57,7 +57,7 @@ function submitStat_Villa(){
             alert(home_team + away_team + amount + security_code + type_choice);
 
             var xhr = new XMLHttpRequest();
-            var url = "http://yourserver.com/yourServlet";
+            var url = "http://localhost:8080/api/v1/order/newOrder";
             xhr.open("POST", url, true);
             xhr.setRequestHeader("Content-Type", "application/json");
 
@@ -66,8 +66,7 @@ function submitStat_Villa(){
                 away: away_team,
                 amount: amount,
                 type: type_choice,
-                subtype: subtype_choice,
-                orderid: security_code
+                subtype: subtype_choice
             };
 
             xhr.send(JSON.stringify(data));
@@ -98,7 +97,7 @@ function submitbig_Villa(){chooseSmall()
             alert(home_team + away_team + amount + security_code + type_choice);
 
             var xhr = new XMLHttpRequest();
-            var url = "http://yourserver.com/yourServlet";
+            var url = "http://localhost:8080/api/v1/order/newOrder";
             xhr.open("POST", url, true);
             xhr.setRequestHeader("Content-Type", "application/json");
 
@@ -107,8 +106,7 @@ function submitbig_Villa(){chooseSmall()
                 away: away_team,
                 amount: amount,
                 type: type_choice,
-                subtype: subtype_choice,
-                orderid: security_code
+                subtype: subtype_choice
             };
 
             xhr.send(JSON.stringify(data));
@@ -139,7 +137,7 @@ function submitCorner_Villa(){
             alert(home_team + away_team + amount + security_code + type_choice);
 
             var xhr = new XMLHttpRequest();
-            var url = "http://yourserver.com/yourServlet";
+            var url = "http://localhost:8080/api/v1/order/newOrder";
             xhr.open("POST", url, true);
             xhr.setRequestHeader("Content-Type", "application/json");
 
@@ -148,8 +146,7 @@ function submitCorner_Villa(){
                 away: away_team,
                 amount: amount,
                 type: type_choice,
-                subtype: subtype_choice,
-                orderid: security_code
+                subtype: subtype_choice
             };
 
             xhr.send(JSON.stringify(data));
@@ -180,7 +177,7 @@ function submitCard_Villa(){
             alert(home_team + away_team + amount + security_code + type_choice);
 
             var xhr = new XMLHttpRequest();
-            var url = "http://yourserver.com/yourServlet";
+            var url = "http://localhost:8080/api/v1/order/newOrder";
             xhr.open("POST", url, true);
             xhr.setRequestHeader("Content-Type", "application/json");
 
@@ -189,8 +186,7 @@ function submitCard_Villa(){
                 away: away_team,
                 amount: amount,
                 type: type_choice,
-                subtype: subtype_choice,
-                orderid: security_code
+                subtype: subtype_choice
             };
 
             xhr.send(JSON.stringify(data));
@@ -221,7 +217,7 @@ function submitStat_Everton(){
             alert(home_team + away_team + amount + security_code + type_choice);
 
             var xhr = new XMLHttpRequest();
-            var url = "http://yourserver.com/yourServlet";
+            var url = "http://localhost:8080/api/v1/order/newOrder";
             xhr.open("POST", url, true);
             xhr.setRequestHeader("Content-Type", "application/json");
 
@@ -230,8 +226,7 @@ function submitStat_Everton(){
                 away: away_team,
                 amount: amount,
                 type: type_choice,
-                subtype: subtype_choice,
-                orderid: security_code
+                subtype: subtype_choice
             };
 
             xhr.send(JSON.stringify(data));
@@ -262,7 +257,7 @@ function submitbig_Everton(){
             alert(home_team + away_team + amount + security_code + type_choice);
 
             var xhr = new XMLHttpRequest();
-            var url = "http://yourserver.com/yourServlet";
+            var url = "http://localhost:8080/api/v1/order/newOrder";
             xhr.open("POST", url, true);
             xhr.setRequestHeader("Content-Type", "application/json");
 
@@ -271,8 +266,7 @@ function submitbig_Everton(){
                 away: away_team,
                 amount: amount,
                 type: type_choice,
-                subtype: subtype_choice,
-                orderid: security_code
+                subtype: subtype_choice
             };
 
             xhr.send(JSON.stringify(data));
@@ -303,7 +297,7 @@ function submitCorner_Everton(){
             alert(home_team + away_team + amount + security_code + type_choice);
 
             var xhr = new XMLHttpRequest();
-            var url = "http://yourserver.com/yourServlet";
+            var url = "http://localhost:8080/api/v1/order/newOrder";
             xhr.open("POST", url, true);
             xhr.setRequestHeader("Content-Type", "application/json");
 
@@ -312,8 +306,7 @@ function submitCorner_Everton(){
                 away: away_team,
                 amount: amount,
                 type: type_choice,
-                subtype: subtype_choice,
-                orderid: security_code
+                subtype: subtype_choice
             };
 
             xhr.send(JSON.stringify(data));
@@ -344,7 +337,7 @@ function submitCard_Everton(){
             alert(home_team + away_team + amount + security_code + type_choice);
 
             var xhr = new XMLHttpRequest();
-            var url = "http://yourserver.com/yourServlet";
+            var url = "http://localhost:8080/api/v1/order/newOrder";
             xhr.open("POST", url, true);
             xhr.setRequestHeader("Content-Type", "application/json");
 
@@ -353,8 +346,7 @@ function submitCard_Everton(){
                 away: away_team,
                 amount: amount,
                 type: type_choice,
-                subtype: subtype_choice,
-                orderid: security_code
+                subtype: subtype_choice
             };
 
             xhr.send(JSON.stringify(data));
@@ -385,7 +377,7 @@ function submitStat_Leeds(){
             alert(home_team + away_team + amount + security_code + type_choice);
 
             var xhr = new XMLHttpRequest();
-            var url = "http://yourserver.com/yourServlet";
+            var url = "http://localhost:8080/api/v1/order/newOrder";
             xhr.open("POST", url, true);
             xhr.setRequestHeader("Content-Type", "application/json");
 
@@ -394,8 +386,7 @@ function submitStat_Leeds(){
                 away: away_team,
                 amount: amount,
                 type: type_choice,
-                subtype: subtype_choice,
-                orderid: security_code
+                subtype: subtype_choice
             };
 
             xhr.send(JSON.stringify(data));
@@ -426,7 +417,7 @@ function submitbig_Leeds(){
             alert(home_team + away_team + amount + security_code + type_choice);
 
             var xhr = new XMLHttpRequest();
-            var url = "http://yourserver.com/yourServlet";
+            var url = "http://localhost:8080/api/v1/order/newOrder";
             xhr.open("POST", url, true);
             xhr.setRequestHeader("Content-Type", "application/json");
 
@@ -435,8 +426,7 @@ function submitbig_Leeds(){
                 away: away_team,
                 amount: amount,
                 type: type_choice,
-                subtype: subtype_choice,
-                orderid: security_code
+                subtype: subtype_choice
             };
 
             xhr.send(JSON.stringify(data));
@@ -467,7 +457,7 @@ function submitCorner_Leeds(){
             alert(home_team + away_team + amount + security_code + type_choice);
 
             var xhr = new XMLHttpRequest();
-            var url = "http://yourserver.com/yourServlet";
+            var url = "http://localhost:8080/api/v1/order/newOrder";
             xhr.open("POST", url, true);
             xhr.setRequestHeader("Content-Type", "application/json");
 
@@ -476,8 +466,7 @@ function submitCorner_Leeds(){
                 away: away_team,
                 amount: amount,
                 type: type_choice,
-                subtype: subtype_choice,
-                orderid: security_code
+                subtype: subtype_choice
             };
 
             xhr.send(JSON.stringify(data));
@@ -508,7 +497,7 @@ function submitCard_Leeds(){
             alert(home_team + away_team + amount + security_code + type_choice);
 
             var xhr = new XMLHttpRequest();
-            var url = "http://yourserver.com/yourServlet";
+            var url = "http://localhost:8080/api/v1/order/newOrder";
             xhr.open("POST", url, true);
             xhr.setRequestHeader("Content-Type", "application/json");
 
@@ -517,8 +506,7 @@ function submitCard_Leeds(){
                 away: away_team,
                 amount: amount,
                 type: type_choice,
-                subtype: subtype_choice,
-                orderid: security_code
+                subtype: subtype_choice
             };
 
             xhr.send(JSON.stringify(data));
@@ -549,7 +537,7 @@ function submitStat_United(){
             alert(home_team + away_team + amount + security_code + type_choice);
 
             var xhr = new XMLHttpRequest();
-            var url = "http://yourserver.com/yourServlet";
+            var url = "http://localhost:8080/api/v1/order/newOrder";
             xhr.open("POST", url, true);
             xhr.setRequestHeader("Content-Type", "application/json");
 
@@ -558,8 +546,7 @@ function submitStat_United(){
                 away: away_team,
                 amount: amount,
                 type: type_choice,
-                subtype: subtype_choice,
-                orderid: security_code
+                subtype: subtype_choice
             };
 
             xhr.send(JSON.stringify(data));
@@ -590,7 +577,7 @@ function submitbig_United(){
             alert(home_team + away_team + amount + security_code + type_choice);
 
             var xhr = new XMLHttpRequest();
-            var url = "http://yourserver.com/yourServlet";
+            var url = "http://localhost:8080/api/v1/order/newOrder";
             xhr.open("POST", url, true);
             xhr.setRequestHeader("Content-Type", "application/json");
 
@@ -599,8 +586,7 @@ function submitbig_United(){
                 away: away_team,
                 amount: amount,
                 type: type_choice,
-                subtype: subtype_choice,
-                orderid: security_code
+                subtype: subtype_choice
             };
 
             xhr.send(JSON.stringify(data));
@@ -631,7 +617,7 @@ function submitCorner_United(){
             alert(home_team + away_team + amount + security_code + type_choice);
 
             var xhr = new XMLHttpRequest();
-            var url = "http://yourserver.com/yourServlet";
+            var url = "http://localhost:8080/api/v1/order/newOrder";
             xhr.open("POST", url, true);
             xhr.setRequestHeader("Content-Type", "application/json");
 
@@ -640,8 +626,7 @@ function submitCorner_United(){
                 away: away_team,
                 amount: amount,
                 type: type_choice,
-                subtype: subtype_choice,
-                orderid: security_code
+                subtype: subtype_choice
             };
 
             xhr.send(JSON.stringify(data));
@@ -672,7 +657,7 @@ function submitCard_United(){
             alert(home_team + away_team + amount + security_code + type_choice);
 
             var xhr = new XMLHttpRequest();
-            var url = "http://yourserver.com/yourServlet";
+            var url = "http://localhost:8080/api/v1/order/newOrder";
             xhr.open("POST", url, true);
             xhr.setRequestHeader("Content-Type", "application/json");
 
@@ -681,8 +666,7 @@ function submitCard_United(){
                 away: away_team,
                 amount: amount,
                 type: type_choice,
-                subtype: subtype_choice,
-                orderid: security_code
+                subtype: subtype_choice
             };
 
             xhr.send(JSON.stringify(data));
@@ -713,7 +697,7 @@ function submitStat_Chelsea(){
             alert(home_team + away_team + amount + security_code + type_choice);
 
             var xhr = new XMLHttpRequest();
-            var url = "http://yourserver.com/yourServlet";
+            var url = "http://localhost:8080/api/v1/order/newOrder";
             xhr.open("POST", url, true);
             xhr.setRequestHeader("Content-Type", "application/json");
 
@@ -722,8 +706,7 @@ function submitStat_Chelsea(){
                 away: away_team,
                 amount: amount,
                 type: type_choice,
-                subtype: subtype_choice,
-                orderid: security_code
+                subtype: subtype_choice
             };
 
             xhr.send(JSON.stringify(data));
@@ -754,7 +737,7 @@ function submitbig_Chelsea(){
             alert(home_team + away_team + amount + security_code + type_choice);
 
             var xhr = new XMLHttpRequest();
-            var url = "http://yourserver.com/yourServlet";
+            var url = "http://localhost:8080/api/v1/order/newOrder";
             xhr.open("POST", url, true);
             xhr.setRequestHeader("Content-Type", "application/json");
 
@@ -763,8 +746,7 @@ function submitbig_Chelsea(){
                 away: away_team,
                 amount: amount,
                 type: type_choice,
-                subtype: subtype_choice,
-                orderid: security_code
+                subtype: subtype_choice
             };
 
             xhr.send(JSON.stringify(data));
@@ -795,7 +777,7 @@ function submitCorner_Chelsea(){
             alert(home_team + away_team + amount + security_code + type_choice);
 
             var xhr = new XMLHttpRequest();
-            var url = "http://yourserver.com/yourServlet";
+            var url = "http://localhost:8080/api/v1/order/newOrder";
             xhr.open("POST", url, true);
             xhr.setRequestHeader("Content-Type", "application/json");
 
@@ -804,8 +786,7 @@ function submitCorner_Chelsea(){
                 away: away_team,
                 amount: amount,
                 type: type_choice,
-                subtype: subtype_choice,
-                orderid: security_code
+                subtype: subtype_choice
             };
 
             xhr.send(JSON.stringify(data));
@@ -836,7 +817,7 @@ function submitCard_Chelsea(){
             alert(home_team + away_team + amount + security_code + type_choice);
 
             var xhr = new XMLHttpRequest();
-            var url = "http://yourserver.com/yourServlet";
+            var url = "http://localhost:8080/api/v1/order/newOrder";
             xhr.open("POST", url, true);
             xhr.setRequestHeader("Content-Type", "application/json");
 
@@ -845,8 +826,7 @@ function submitCard_Chelsea(){
                 away: away_team,
                 amount: amount,
                 type: type_choice,
-                subtype: subtype_choice,
-                orderid: security_code
+                subtype: subtype_choice
             };
 
             xhr.send(JSON.stringify(data));
@@ -877,7 +857,7 @@ function submitStat_Leicester(){
             alert(home_team + away_team + amount + security_code + type_choice);
 
             var xhr = new XMLHttpRequest();
-            var url = "http://yourserver.com/yourServlet";
+            var url = "http://localhost:8080/api/v1/order/newOrder";
             xhr.open("POST", url, true);
             xhr.setRequestHeader("Content-Type", "application/json");
 
@@ -886,8 +866,7 @@ function submitStat_Leicester(){
                 away: away_team,
                 amount: amount,
                 type: type_choice,
-                subtype: subtype_choice,
-                orderid: security_code
+                subtype: subtype_choice
             };
 
             xhr.send(JSON.stringify(data));
@@ -918,7 +897,7 @@ function submitbig_Leicester(){
             alert(home_team + away_team + amount + security_code + type_choice);
 
             var xhr = new XMLHttpRequest();
-            var url = "http://yourserver.com/yourServlet";
+            var url = "http://localhost:8080/api/v1/order/newOrder";
             xhr.open("POST", url, true);
             xhr.setRequestHeader("Content-Type", "application/json");
 
@@ -927,8 +906,7 @@ function submitbig_Leicester(){
                 away: away_team,
                 amount: amount,
                 type: type_choice,
-                subtype: subtype_choice,
-                orderid: security_code
+                subtype: subtype_choice
             };
 
             xhr.send(JSON.stringify(data));
@@ -959,7 +937,7 @@ function submitCorner_Leicester(){
             alert(home_team + away_team + amount + security_code + type_choice);
 
             var xhr = new XMLHttpRequest();
-            var url = "http://yourserver.com/yourServlet";
+            var url = "http://localhost:8080/api/v1/order/newOrder";
             xhr.open("POST", url, true);
             xhr.setRequestHeader("Content-Type", "application/json");
 
@@ -968,8 +946,7 @@ function submitCorner_Leicester(){
                 away: away_team,
                 amount: amount,
                 type: type_choice,
-                subtype: subtype_choice,
-                orderid: security_code
+                subtype: subtype_choice
             };
 
             xhr.send(JSON.stringify(data));
@@ -1000,7 +977,7 @@ function submitCard_Leicester(){
             alert(home_team + away_team + amount + security_code + type_choice);
 
             var xhr = new XMLHttpRequest();
-            var url = "http://yourserver.com/yourServlet";
+            var url = "http://localhost:8080/api/v1/order/newOrder";
             xhr.open("POST", url, true);
             xhr.setRequestHeader("Content-Type", "application/json");
 
@@ -1009,8 +986,7 @@ function submitCard_Leicester(){
                 away: away_team,
                 amount: amount,
                 type: type_choice,
-                subtype: subtype_choice,
-                orderid: security_code
+                subtype: subtype_choice
             };
 
             xhr.send(JSON.stringify(data));
@@ -1041,7 +1017,7 @@ function submitStat_Arsenal(){
             alert(home_team + away_team + amount + security_code + type_choice);
 
             var xhr = new XMLHttpRequest();
-            var url = "http://yourserver.com/yourServlet";
+            var url = "http://localhost:8080/api/v1/order/newOrder";
             xhr.open("POST", url, true);
             xhr.setRequestHeader("Content-Type", "application/json");
 
@@ -1050,8 +1026,7 @@ function submitStat_Arsenal(){
                 away: away_team,
                 amount: amount,
                 type: type_choice,
-                subtype: subtype_choice,
-                orderid: security_code
+                subtype: subtype_choice
             };
 
             xhr.send(JSON.stringify(data));
@@ -1082,7 +1057,7 @@ function submitbig_Arsenal(){
             alert(home_team + away_team + amount + security_code + type_choice);
 
             var xhr = new XMLHttpRequest();
-            var url = "http://yourserver.com/yourServlet";
+            var url = "http://localhost:8080/api/v1/order/newOrder";
             xhr.open("POST", url, true);
             xhr.setRequestHeader("Content-Type", "application/json");
 
@@ -1091,8 +1066,7 @@ function submitbig_Arsenal(){
                 away: away_team,
                 amount: amount,
                 type: type_choice,
-                subtype: subtype_choice,
-                orderid: security_code
+                subtype: subtype_choice
             };
 
             xhr.send(JSON.stringify(data));
@@ -1123,7 +1097,7 @@ function submitCorner_Arsenal(){
             alert(home_team + away_team + amount + security_code + type_choice);
 
             var xhr = new XMLHttpRequest();
-            var url = "http://yourserver.com/yourServlet";
+            var url = "http://localhost:8080/api/v1/order/newOrder";
             xhr.open("POST", url, true);
             xhr.setRequestHeader("Content-Type", "application/json");
 
@@ -1132,8 +1106,7 @@ function submitCorner_Arsenal(){
                 away: away_team,
                 amount: amount,
                 type: type_choice,
-                subtype: subtype_choice,
-                orderid: security_code
+                subtype: subtype_choice
             };
 
             xhr.send(JSON.stringify(data));
@@ -1164,7 +1137,7 @@ function submitCard_Arsenal(){
             alert(home_team + away_team + amount + security_code + type_choice);
 
             var xhr = new XMLHttpRequest();
-            var url = "http://yourserver.com/yourServlet";
+            var url = "http://localhost:8080/api/v1/order/newOrder";
             xhr.open("POST", url, true);
             xhr.setRequestHeader("Content-Type", "application/json");
 
@@ -1173,8 +1146,7 @@ function submitCard_Arsenal(){
                 away: away_team,
                 amount: amount,
                 type: type_choice,
-                subtype: subtype_choice,
-                orderid: security_code
+                subtype: subtype_choice
             };
 
             xhr.send(JSON.stringify(data));
@@ -1206,7 +1178,7 @@ function submitStat_Southampton(){
             alert(home_team + away_team + amount + security_code + type_choice);
 
             var xhr = new XMLHttpRequest();
-            var url = "http://yourserver.com/yourServlet";
+            var url = "http://localhost:8080/api/v1/order/newOrder";
             xhr.open("POST", url, true);
             xhr.setRequestHeader("Content-Type", "application/json");
 
@@ -1215,8 +1187,7 @@ function submitStat_Southampton(){
                 away: away_team,
                 amount: amount,
                 type: type_choice,
-                subtype: subtype_choice,
-                orderid: security_code
+                subtype: subtype_choice
             };
 
             xhr.send(JSON.stringify(data));
@@ -1247,7 +1218,7 @@ function submitbig_Southampton(){
             alert(home_team + away_team + amount + security_code + type_choice);
 
             var xhr = new XMLHttpRequest();
-            var url = "http://yourserver.com/yourServlet";
+            var url = "http://localhost:8080/api/v1/order/newOrder";
             xhr.open("POST", url, true);
             xhr.setRequestHeader("Content-Type", "application/json");
 
@@ -1256,8 +1227,7 @@ function submitbig_Southampton(){
                 away: away_team,
                 amount: amount,
                 type: type_choice,
-                subtype: subtype_choice,
-                orderid: security_code
+                subtype: subtype_choice
             };
 
             xhr.send(JSON.stringify(data));
@@ -1288,7 +1258,7 @@ function submitCorner_Southampton(){
             alert(home_team + away_team + amount + security_code + type_choice);
 
             var xhr = new XMLHttpRequest();
-            var url = "http://yourserver.com/yourServlet";
+            var url = "http://localhost:8080/api/v1/order/newOrder";
             xhr.open("POST", url, true);
             xhr.setRequestHeader("Content-Type", "application/json");
 
@@ -1297,8 +1267,7 @@ function submitCorner_Southampton(){
                 away: away_team,
                 amount: amount,
                 type: type_choice,
-                subtype: subtype_choice,
-                orderid: security_code
+                subtype: subtype_choice
             };
 
             xhr.send(JSON.stringify(data));
@@ -1329,7 +1298,7 @@ function submitCard_Southampton(){
             alert(home_team + away_team + amount + security_code + type_choice);
 
             var xhr = new XMLHttpRequest();
-            var url = "http://yourserver.com/yourServlet";
+            var url = "http://localhost:8080/api/v1/order/newOrder";
             xhr.open("POST", url, true);
             xhr.setRequestHeader("Content-Type", "application/json");
 
@@ -1338,8 +1307,7 @@ function submitCard_Southampton(){
                 away: away_team,
                 amount: amount,
                 type: type_choice,
-                subtype: subtype_choice,
-                orderid: security_code
+                subtype: subtype_choice
             };
 
             xhr.send(JSON.stringify(data));
@@ -1478,13 +1446,13 @@ function login(){
 
     //alert(login_username + login_pwd);
     var xhr = new XMLHttpRequest();
-    var url = "http://yourserver.com/yourServlet";
+    var url = "http://localhost:8080/api/v1/auth/authenticate";
     xhr.open("POST", url, true);
     xhr.setRequestHeader("Content-Type", "application/json");
 
     var data = {
         username: login_username,
-        pwd: login_pwd
+        password: login_pwd
     };
 
     xhr.send(JSON.stringify(data));
@@ -1578,7 +1546,7 @@ function signup(){
     }
 
     var xhr = new XMLHttpRequest();
-    var url = "http://yourserver.com/yourServlet";
+    var url = "http://localhost:8080/api/v1/auth/register";
     xhr.open("POST", url, true);
     xhr.setRequestHeader("Content-Type", "application/json");
 
