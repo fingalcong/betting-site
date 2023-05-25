@@ -62,11 +62,11 @@ function submitStat_Villa(){
             xhr.setRequestHeader("Content-Type", "application/json");
 
             var data = {
-                home: home_team,
-                away: away_team,
+                homeTeam: home_team,
+                awayTeam: away_team,
                 amount: amount,
                 type: type_choice,
-                subtype: subtype_choice
+                subType: subtype_choice
             };
 
             xhr.send(JSON.stringify(data));
@@ -102,11 +102,11 @@ function submitbig_Villa(){chooseSmall()
             xhr.setRequestHeader("Content-Type", "application/json");
 
             var data = {
-                home: home_team,
-                away: away_team,
+                homeTeam: home_team,
+                awayTeam: away_team,
                 amount: amount,
                 type: type_choice,
-                subtype: subtype_choice
+                subType: subtype_choice
             };
 
             xhr.send(JSON.stringify(data));
@@ -142,11 +142,11 @@ function submitCorner_Villa(){
             xhr.setRequestHeader("Content-Type", "application/json");
 
             var data = {
-                home: home_team,
-                away: away_team,
+                homeTeam: home_team,
+                awayTeam: away_team,
                 amount: amount,
                 type: type_choice,
-                subtype: subtype_choice
+                subType: subtype_choice
             };
 
             xhr.send(JSON.stringify(data));
@@ -182,11 +182,11 @@ function submitCard_Villa(){
             xhr.setRequestHeader("Content-Type", "application/json");
 
             var data = {
-                home: home_team,
-                away: away_team,
+                homeTeam: home_team,
+                awayTeam: away_team,
                 amount: amount,
                 type: type_choice,
-                subtype: subtype_choice
+                subType: subtype_choice
             };
 
             xhr.send(JSON.stringify(data));
@@ -222,11 +222,11 @@ function submitStat_Everton(){
             xhr.setRequestHeader("Content-Type", "application/json");
 
             var data = {
-                home: home_team,
-                away: away_team,
+                homeTeam: home_team,
+                awayTeam: away_team,
                 amount: amount,
                 type: type_choice,
-                subtype: subtype_choice
+                subType: subtype_choice
             };
 
             xhr.send(JSON.stringify(data));
@@ -262,11 +262,11 @@ function submitbig_Everton(){
             xhr.setRequestHeader("Content-Type", "application/json");
 
             var data = {
-                home: home_team,
-                away: away_team,
+                homeTeam: home_team,
+                awayTeam: away_team,
                 amount: amount,
                 type: type_choice,
-                subtype: subtype_choice
+                subType: subtype_choice
             };
 
             xhr.send(JSON.stringify(data));
@@ -302,11 +302,11 @@ function submitCorner_Everton(){
             xhr.setRequestHeader("Content-Type", "application/json");
 
             var data = {
-                home: home_team,
-                away: away_team,
+                homeTeam: home_team,
+                awayTeam: away_team,
                 amount: amount,
                 type: type_choice,
-                subtype: subtype_choice
+                subType: subtype_choice
             };
 
             xhr.send(JSON.stringify(data));
@@ -342,11 +342,11 @@ function submitCard_Everton(){
             xhr.setRequestHeader("Content-Type", "application/json");
 
             var data = {
-                home: home_team,
-                away: away_team,
+                homeTeam: home_team,
+                awayTeam: away_team,
                 amount: amount,
                 type: type_choice,
-                subtype: subtype_choice
+                subType: subtype_choice
             };
 
             xhr.send(JSON.stringify(data));
@@ -382,11 +382,11 @@ function submitStat_Leeds(){
             xhr.setRequestHeader("Content-Type", "application/json");
 
             var data = {
-                home: home_team,
-                away: away_team,
+                homeTeam: home_team,
+                awayTeam: away_team,
                 amount: amount,
                 type: type_choice,
-                subtype: subtype_choice
+                subType: subtype_choice
             };
 
             xhr.send(JSON.stringify(data));
@@ -422,11 +422,11 @@ function submitbig_Leeds(){
             xhr.setRequestHeader("Content-Type", "application/json");
 
             var data = {
-                home: home_team,
-                away: away_team,
+                homeTeam: home_team,
+                awayTeam: away_team,
                 amount: amount,
                 type: type_choice,
-                subtype: subtype_choice
+                subType: subtype_choice
             };
 
             xhr.send(JSON.stringify(data));
@@ -462,11 +462,11 @@ function submitCorner_Leeds(){
             xhr.setRequestHeader("Content-Type", "application/json");
 
             var data = {
-                home: home_team,
-                away: away_team,
+                homeTeam: home_team,
+                awayTeam: away_team,
                 amount: amount,
                 type: type_choice,
-                subtype: subtype_choice
+                subType: subtype_choice
             };
 
             xhr.send(JSON.stringify(data));
@@ -502,11 +502,11 @@ function submitCard_Leeds(){
             xhr.setRequestHeader("Content-Type", "application/json");
 
             var data = {
-                home: home_team,
-                away: away_team,
+                homeTeam: home_team,
+                awayTeam: away_team,
                 amount: amount,
                 type: type_choice,
-                subtype: subtype_choice
+                subType: subtype_choice
             };
 
             xhr.send(JSON.stringify(data));
@@ -542,11 +542,11 @@ function submitStat_United(){
             xhr.setRequestHeader("Content-Type", "application/json");
 
             var data = {
-                home: home_team,
-                away: away_team,
+                homeTeam: home_team,
+                awayTeam: away_team,
                 amount: amount,
                 type: type_choice,
-                subtype: subtype_choice
+                subType: subtype_choice
             };
 
             xhr.send(JSON.stringify(data));
@@ -582,11 +582,11 @@ function submitbig_United(){
             xhr.setRequestHeader("Content-Type", "application/json");
 
             var data = {
-                home: home_team,
-                away: away_team,
+                homeTeam: home_team,
+                awayTeam: away_team,
                 amount: amount,
                 type: type_choice,
-                subtype: subtype_choice
+                subType: subtype_choice
             };
 
             xhr.send(JSON.stringify(data));
@@ -622,11 +622,11 @@ function submitCorner_United(){
             xhr.setRequestHeader("Content-Type", "application/json");
 
             var data = {
-                home: home_team,
-                away: away_team,
+                homeTeam: home_team,
+                awayTeam: away_team,
                 amount: amount,
                 type: type_choice,
-                subtype: subtype_choice
+                subType: subtype_choice
             };
 
             xhr.send(JSON.stringify(data));
@@ -662,11 +662,11 @@ function submitCard_United(){
             xhr.setRequestHeader("Content-Type", "application/json");
 
             var data = {
-                home: home_team,
-                away: away_team,
+                homeTeam: home_team,
+                awayTeam: away_team,
                 amount: amount,
                 type: type_choice,
-                subtype: subtype_choice
+                subType: subtype_choice
             };
 
             xhr.send(JSON.stringify(data));
@@ -702,11 +702,11 @@ function submitStat_Chelsea(){
             xhr.setRequestHeader("Content-Type", "application/json");
 
             var data = {
-                home: home_team,
-                away: away_team,
+                homeTeam: home_team,
+                awayTeam: away_team,
                 amount: amount,
                 type: type_choice,
-                subtype: subtype_choice
+                subType: subtype_choice
             };
 
             xhr.send(JSON.stringify(data));
@@ -742,11 +742,11 @@ function submitbig_Chelsea(){
             xhr.setRequestHeader("Content-Type", "application/json");
 
             var data = {
-                home: home_team,
-                away: away_team,
+                homeTeam: home_team,
+                awayTeam: away_team,
                 amount: amount,
                 type: type_choice,
-                subtype: subtype_choice
+                subType: subtype_choice
             };
 
             xhr.send(JSON.stringify(data));
@@ -782,11 +782,11 @@ function submitCorner_Chelsea(){
             xhr.setRequestHeader("Content-Type", "application/json");
 
             var data = {
-                home: home_team,
-                away: away_team,
+                homeTeam: home_team,
+                awayTeam: away_team,
                 amount: amount,
                 type: type_choice,
-                subtype: subtype_choice
+                subType: subtype_choice
             };
 
             xhr.send(JSON.stringify(data));
@@ -822,11 +822,11 @@ function submitCard_Chelsea(){
             xhr.setRequestHeader("Content-Type", "application/json");
 
             var data = {
-                home: home_team,
-                away: away_team,
+                homeTeam: home_team,
+                awayTeam: away_team,
                 amount: amount,
                 type: type_choice,
-                subtype: subtype_choice
+                subType: subtype_choice
             };
 
             xhr.send(JSON.stringify(data));
@@ -862,11 +862,11 @@ function submitStat_Leicester(){
             xhr.setRequestHeader("Content-Type", "application/json");
 
             var data = {
-                home: home_team,
-                away: away_team,
+                homeTeam: home_team,
+                awayTeam: away_team,
                 amount: amount,
                 type: type_choice,
-                subtype: subtype_choice
+                subType: subtype_choice
             };
 
             xhr.send(JSON.stringify(data));
@@ -902,11 +902,11 @@ function submitbig_Leicester(){
             xhr.setRequestHeader("Content-Type", "application/json");
 
             var data = {
-                home: home_team,
-                away: away_team,
+                homeTeam: home_team,
+                awayTeam: away_team,
                 amount: amount,
                 type: type_choice,
-                subtype: subtype_choice
+                subType: subtype_choice
             };
 
             xhr.send(JSON.stringify(data));
@@ -942,11 +942,11 @@ function submitCorner_Leicester(){
             xhr.setRequestHeader("Content-Type", "application/json");
 
             var data = {
-                home: home_team,
-                away: away_team,
+                homeTeam: home_team,
+                awayTeam: away_team,
                 amount: amount,
                 type: type_choice,
-                subtype: subtype_choice
+                subType: subtype_choice
             };
 
             xhr.send(JSON.stringify(data));
@@ -982,11 +982,11 @@ function submitCard_Leicester(){
             xhr.setRequestHeader("Content-Type", "application/json");
 
             var data = {
-                home: home_team,
-                away: away_team,
+                homeTeam: home_team,
+                awayTeam: away_team,
                 amount: amount,
                 type: type_choice,
-                subtype: subtype_choice
+                subType: subtype_choice
             };
 
             xhr.send(JSON.stringify(data));
@@ -1022,11 +1022,11 @@ function submitStat_Arsenal(){
             xhr.setRequestHeader("Content-Type", "application/json");
 
             var data = {
-                home: home_team,
-                away: away_team,
+                homeTeam: home_team,
+                awayTeam: away_team,
                 amount: amount,
                 type: type_choice,
-                subtype: subtype_choice
+                subType: subtype_choice
             };
 
             xhr.send(JSON.stringify(data));
@@ -1062,11 +1062,11 @@ function submitbig_Arsenal(){
             xhr.setRequestHeader("Content-Type", "application/json");
 
             var data = {
-                home: home_team,
-                away: away_team,
+                homeTeam: home_team,
+                awayTeam: away_team,
                 amount: amount,
                 type: type_choice,
-                subtype: subtype_choice
+                subType: subtype_choice
             };
 
             xhr.send(JSON.stringify(data));
@@ -1102,11 +1102,11 @@ function submitCorner_Arsenal(){
             xhr.setRequestHeader("Content-Type", "application/json");
 
             var data = {
-                home: home_team,
-                away: away_team,
+                homeTeam: home_team,
+                awayTeam: away_team,
                 amount: amount,
                 type: type_choice,
-                subtype: subtype_choice
+                subType: subtype_choice
             };
 
             xhr.send(JSON.stringify(data));
@@ -1142,11 +1142,11 @@ function submitCard_Arsenal(){
             xhr.setRequestHeader("Content-Type", "application/json");
 
             var data = {
-                home: home_team,
-                away: away_team,
+                homeTeam: home_team,
+                awayTeam: away_team,
                 amount: amount,
                 type: type_choice,
-                subtype: subtype_choice
+                subType: subtype_choice
             };
 
             xhr.send(JSON.stringify(data));
@@ -1183,11 +1183,11 @@ function submitStat_Southampton(){
             xhr.setRequestHeader("Content-Type", "application/json");
 
             var data = {
-                home: home_team,
-                away: away_team,
+                homeTeam: home_team,
+                awayTeam: away_team,
                 amount: amount,
                 type: type_choice,
-                subtype: subtype_choice
+                subType: subtype_choice
             };
 
             xhr.send(JSON.stringify(data));
@@ -1223,11 +1223,11 @@ function submitbig_Southampton(){
             xhr.setRequestHeader("Content-Type", "application/json");
 
             var data = {
-                home: home_team,
-                away: away_team,
+                homeTeam: home_team,
+                awayTeam: away_team,
                 amount: amount,
                 type: type_choice,
-                subtype: subtype_choice
+                subType: subtype_choice
             };
 
             xhr.send(JSON.stringify(data));
@@ -1263,11 +1263,11 @@ function submitCorner_Southampton(){
             xhr.setRequestHeader("Content-Type", "application/json");
 
             var data = {
-                home: home_team,
-                away: away_team,
+                homeTeam: home_team,
+                awayTeam: away_team,
                 amount: amount,
                 type: type_choice,
-                subtype: subtype_choice
+                subType: subtype_choice
             };
 
             xhr.send(JSON.stringify(data));
@@ -1303,11 +1303,11 @@ function submitCard_Southampton(){
             xhr.setRequestHeader("Content-Type", "application/json");
 
             var data = {
-                home: home_team,
-                away: away_team,
+                homeTeam: home_team,
+                awayTeam: away_team,
                 amount: amount,
                 type: type_choice,
-                subtype: subtype_choice
+                subType: subtype_choice
             };
 
             xhr.send(JSON.stringify(data));
