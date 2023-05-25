@@ -1441,17 +1441,17 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function login(){
-    const login_username = document.getElementById("login_username").value;
+    const login_email = document.getElementById("login_email").value;
     const login_pwd = document.getElementById("login_pwd").value;
 
-    //alert(login_username + login_pwd);
+    //alert(login_email + login_pwd);
     var xhr = new XMLHttpRequest();
     var url = "http://localhost:8080/api/v1/auth/authenticate";
     xhr.open("POST", url, true);
     xhr.setRequestHeader("Content-Type", "application/json");
 
     var data = {
-        username: login_username,
+        email: login_email,
         password: login_pwd
     };
 
