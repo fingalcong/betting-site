@@ -14,7 +14,16 @@ $(document).ready(function() {
 let true_or_false = 0;
 let type_choice = '';
 let subtype_choice = '';
+
 //document.cookie = "authorization=success";
+var XMLHttpRequestWithJWT = function (method, url, async){
+    const result = document.cookie.match(/jwt=(.+)/);
+    var xmlHttpRequest = new XMLHttpRequest();
+    xmlHttpRequest.open(method, url, async);
+    alert(result[1]);
+    xmlHttpRequest.setRequestHeader('Authorization', 'Bearer ' + result[1]);
+    return xmlHttpRequest;
+};
 
 function submitStat(){
     //console.log(result[1])
@@ -55,19 +64,22 @@ function submitStat_Villa(){
             const security_code = document.getElementById("Security_for_betting_Villa").value;
 
             alert(home_team + away_team + amount + security_code + type_choice);
-
             var xhr = new XMLHttpRequest();
             var url = "http://localhost:8080/api/v1/order/newOrder";
+            //var xhr = XMLHttpRequestWithJWT("POST", url, true);
             xhr.open("POST", url, true);
             xhr.setRequestHeader("Content-Type", "application/json");
-
+            
+            const result = document.cookie.match(/jwt=(.+)/);
+            xhr.setRequestHeader('authorization', 'Bearer ' + JSON.stringify(result[1]));
             var data = {
                 homeTeam: home_team,
                 awayTeam: away_team,
-                amount: amount,
                 type: type_choice,
-                subType: subtype_choice
+                subType: subtype_choice,
+                amount: amount
             };
+            alert(xhr);
 
             xhr.send(JSON.stringify(data));
             //true_or_false = 0;
@@ -1446,6 +1458,13 @@ function login(){
 
     //alert(login_email + login_pwd);
     var xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState == XMLHttpRequest.DONE) {
+            //alert(xhr.status)//200, 403
+            jwtToken = JSON.parse(xhr.response).token;
+            document.cookie = "jwt="+jwtToken;
+        }
+    }
     var url = "http://localhost:8080/api/v1/auth/authenticate";
     xhr.open("POST", url, true);
     xhr.setRequestHeader("Content-Type", "application/json");
