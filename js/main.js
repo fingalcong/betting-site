@@ -40,7 +40,7 @@ function submitStat(){
             alert(amount + security_code + type_choice + subtype_choice);
             //true_or_false = 0;
         }
-    
+
     /*const amount = document.getElementById("Amount_for_betting").value;
     const security_code = document.getElementById("Security_for_betting").value;
     */
@@ -1270,10 +1270,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
     loginForm.addEventListener("submit", e => {
         e.preventDefault();
-
-        // Perform your AJAX/Fetch login
-
-        setFormMessage(loginForm, "error", "Invalid username/password combination");
+        /*const token = document.cookie.match(/jwt=(.+)/);
+        if(token[1] != null){
+            //alert(token[1]);
+            document.cookie = "authorization=success";
+        }
+        else{
+            setFormMessage(loginForm, "error", "Invalid username/password combination");
+        }*/
     });
 
     document.querySelectorAll(".form__input").forEach(inputElement => {
@@ -1298,6 +1302,17 @@ function login(){
     xhr.onreadystatechange = function() {
         if (xhr.readyState == XMLHttpRequest.DONE) {
             //alert(xhr.status)//200, 403
+            if(xhr.status == 200){
+                document.cookie = "authorization=success";
+                const loginForm = document.querySelector("#login");
+                setFormMessage(loginForm, "success", "Login Succeed, the page will be jumped to home page in 3 seconds");
+                //window.location.href = "index.html";
+                tiaotrigger();
+            }
+            else{
+                const loginForm = document.querySelector("#login");
+                setFormMessage(loginForm, "error", "Invalid username/password combination");
+            }
             jwtToken = JSON.parse(xhr.response).token;
             document.cookie = "jwt="+jwtToken;
         }
@@ -1312,41 +1327,6 @@ function login(){
     };
 
     xhr.send(JSON.stringify(data));
-
-    //s_or_fail = "success"; //we will collect this data from back-end later
-    document.cookie = "authorization=success";
-    if(document.cookie.indexOf('authorization=') == -1){
-        alert('failure of login, please make sure you type in the correct username and pwd');
-    }
-    else{
-        var tbody = document.querySelector('#data_purchase_history');
-        var tr = document.createElement('tr');
-        var td0 = document.createElement('td');
-        var td1 = document.createElement('td');
-        var td2 = document.createElement('td');
-        var td3 = document.createElement('td');
-        var td4 = document.createElement('td');
-        var td5 = document.createElement('td');
-        var td6 = document.createElement('td');
-
-        td0.innerHTML = '1'; //change this num to a count when utilizing later
-        td1.innerHTML = 'Arsenal';
-        td2.innerHTML = 'Liverpool';
-        td3.innerHTML = 'Big or Small';
-        td4.innerHTML = 'Big';
-        td5.innerHTML = '50000';
-        td6.innerHTML = 'UCI MCS';
-
-        tr.append(td0);
-        tr.append(td1);
-        tr.append(td2);
-        tr.append(td3);
-        tr.append(td4);
-        tr.append(td5);
-        tr.append(td6);
-        tbody.append(tr);
-        //s_or_fail = 'success';
-    }
 }
 
 /*document.getElementById("purchase_history").onclick = function () {
@@ -1425,3 +1405,14 @@ function signup(){
         alert(username + email + pwd);
     }*/
 }
+//var mytime = setInterval("changeSec()",1000);
+function tiao() {
+    //clearInterval(mytime);
+    window.location.href = "index.html";
+}
+
+var myVar;
+function tiaotrigger() {
+    myVar = setTimeout(tiao, 3000);
+}
+//setTimeout("tiao()",5000);
