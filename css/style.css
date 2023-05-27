@@ -1112,9 +1112,23 @@ div.comment:first-of-type {
 .odds{
     display: flex;
     margin-top: 20px;
-    margin-left: 155px;
+    margin-left: 150px;
 }
 
-#Villa_homewin_odds{
-    
+.spec_odds_home{
+    margin-right: 40px;
+}
+
+.spec_odds_draw{
+    margin-left: 50px;
+    margin-right: 80px;
+}
+
+.spec_odds_away{
+    margin-left: 25px;
+}
+
+.spec_odds_home,.spec_odds_draw,.spec_odds_away{
+    color: #37d689;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
