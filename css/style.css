@@ -1203,10 +1203,6 @@ div.comment:first-of-type {
     margin-left: 100px;
 }
 
-.spec_odds_away{
-
-}
-
 .spec_odds_home,.spec_odds_draw,.spec_odds_away, .spec_odds_draw1{
     color: #37d689;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
